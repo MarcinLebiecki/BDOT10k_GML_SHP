@@ -1694,7 +1694,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(78)
             
             #join do warstwy OT_PTWP_A
-            if os.path.exists(path+przestrzen_nazw+'__OT_ZbiornikWodny.xml') and OT_Ciek != None and os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and OT_ZbiornikWodny != None and OT_PTWP_A != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_ZbiornikWodny.xml') and os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_PTWP_A.xml') and OT_Ciek != None and OT_ZbiornikWodny != None and OT_PTWP_A != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('zbiornikWodny1_tmp')
@@ -1717,7 +1717,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(79)
             
             #join do warstwy nazwy_rzek_nad_linia
-            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and OT_Ciek != None and nazwy_rzek_nad_linia != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.xml') and OT_Ciek != None and nazwy_rzek_nad_linia != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('ciek1_tmp')
@@ -1732,7 +1732,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(80)
             
             #join do warstwy nazwy_rzek_na_linii
-            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and OT_Ciek != None and nazwy_rzek_na_linii != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.xml') and OT_Ciek != None and nazwy_rzek_na_linii != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('ciek1_tmp')
@@ -1747,7 +1747,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(81)
             
             #join do warstwy nazwy_kanalow_nad_linia
-            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and OT_Ciek != None and nazwy_kanalow_nad_linia != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWKN_L.xml') and OT_Ciek != None and nazwy_kanalow_nad_linia != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('ciek1_tmp')
@@ -1762,7 +1762,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(82)
             
             #join do warstwy nazwy_kanalow_na_linii
-            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and OT_Ciek != None and nazwy_kanalow_na_linii != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWKN_L.xml') and OT_Ciek != None and nazwy_kanalow_na_linii != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('ciek1_tmp')
@@ -1777,7 +1777,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(83)
             
             #join do warstwy OT_KUPG_A
-            if os.path.exists(path+przestrzen_nazw+'__OT_Elektrownia.xml') and OT_Elektrownia!= None and OT_KUPG_A != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Elektrownia.xml') and os.path.exists(path+przestrzen_nazw+'__OT_KUPG_A.xml') and OT_Elektrownia!= None and OT_KUPG_A != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('elektrownia_tmp')
@@ -1786,7 +1786,7 @@ class BDOT10k_GML_SHP_loader:
                 joinObject.setUsingMemoryCache(True)
                 joinObject.setJoinLayer(OT_Elektrownia)
                 OT_KUPG_A.addJoin(joinObject)
-            if os.path.exists(path+przestrzen_nazw+'__OT_Kopalnia.xml') and OT_Kopalnia != None and OT_KUPG_A != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Kopalnia.xml') and os.path.exists(path+przestrzen_nazw+'__OT_KUPG_A.xml') and OT_Kopalnia != None and OT_KUPG_A != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('kopalnia_tmp')
@@ -1805,7 +1805,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(84)
             
             #join do warstwy OT_KUKO_A
-            if os.path.exists(path+przestrzen_nazw+'__OT_Lotnisko.xml') and OT_Lotnisko != None and OT_KUKO_A != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Lotnisko.xml') and os.path.exists(path+przestrzen_nazw+'__OT_KUKO_A.xml') and OT_Lotnisko != None and OT_KUKO_A != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('kuko_a3_tmp')
                 joinObject.setTargetFieldName('gml_id')
@@ -1814,7 +1814,7 @@ class BDOT10k_GML_SHP_loader:
                 joinObject.setUsingMemoryCache(True)
                 joinObject.setJoinLayer(OT_Lotnisko)
                 OT_KUKO_A.addJoin(joinObject)
-            if os.path.exists(path+przestrzen_nazw+'__OT_Port.xml') and OT_Port != None and OT_KUKO_A != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_Port.xml') and os.path.exists(path+przestrzen_nazw+'__OT_KUKO_A.xml') and OT_Port != None and OT_KUKO_A != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('port_tmp')
@@ -1837,7 +1837,7 @@ class BDOT10k_GML_SHP_loader:
             progress.setValue(85)
             
             #join do warstwy OT_SKTR_L
-            if os.path.exists(path+przestrzen_nazw+'__OT_LiniaKolejowa.xml') and OT_LiniaKolejowa != None and OT_SKTR_L != None:
+            if os.path.exists(path+przestrzen_nazw+'__OT_LiniaKolejowa.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SKTR_L.xml') and OT_LiniaKolejowa != None and OT_SKTR_L != None:
                 joinObject = QgsVectorLayerJoinInfo()
                 joinObject.setJoinFieldName('gml_id')
                 joinObject.setTargetFieldName('liniaKolejowa_tmp')
