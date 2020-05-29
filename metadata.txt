@@ -6,7 +6,7 @@
 name=BDOT10k_GML_SHP
 qgisMinimumVersion=3.0
 description=This tool can be used to import BDOT10k shapefiles or GML files and adds them in the QGIS canvas. Also, layes can be symbolized to be similar to the topographic map in 1:10 000 scale.
-version=0.9.1
+version=0.9.2
 author=Marcin Lebiecki
 email=marcin.lebiecki@gugik.gov.pl
 
@@ -20,7 +20,7 @@ repository=https://github.com/MarcinLebiecki/BDOT10k_GML_SHP
 
 hasProcessingProvider=no
 # Uncomment the following line and add your changelog:
-changelog= Fix error with "OT_SKTR_L polozenie 1" layer
+changelog= Bug fixes
 
 # Tags are comma separated with spaces allowed
 tags=python, BDOT10k, GML
