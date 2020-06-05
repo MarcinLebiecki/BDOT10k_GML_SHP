@@ -579,6 +579,9 @@ class BDOT10k_GML_SHP_loader:
         result = False
         files = None
         
+        if folder_path == "":
+            return
+        
         for file in os.listdir(folder_path):
             if (file.endswith(".xml") or file.endswith(".shp")) and re.match("PL\.PZGiK\.\d{3,4}\.\d{4}(__OT_|_OT_)", file):
                     result = True
