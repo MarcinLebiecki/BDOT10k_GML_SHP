@@ -5,13 +5,6 @@
     <!--LINESTRING-->
     <GeometryType>2</GeometryType>
     <SRSName>EPSG:2180</SRSName>
-    <DatasetSpecificInfo>
-      <FeatureCount>392</FeatureCount>
-      <ExtentXMin>650129.93000</ExtentXMin>
-      <ExtentXMax>698780.47000</ExtentXMax>
-      <ExtentYMin>402997.93000</ExtentYMin>
-      <ExtentYMax>435421.39000</ExtentYMax>
-    </DatasetSpecificInfo>
     <PropertyDefn>
       <Name>lokalnyId</Name>
       <ElementPath>idIIP|BT_Identyfikator|lokalnyId</ElementPath>
@@ -93,6 +86,12 @@
     <PropertyDefn>
       <Name>poczatekWersjiObiektu</Name>
       <ElementPath>x_cyklZycia|BT_CyklZyciaInfo|poczatekWersjiObiektu</ElementPath>
+      <Type>String</Type>
+      <Width>19</Width>
+    </PropertyDefn>
+	<PropertyDefn>
+      <Name>koniecWersjiObiektu</Name>
+      <ElementPath>x_cyklZycia|BT_CyklZyciaInfo|koniecWersjiObiektu</ElementPath>
       <Type>String</Type>
       <Width>19</Width>
     </PropertyDefn>

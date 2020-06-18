@@ -88,6 +88,12 @@
       <Type>String</Type>
       <Width>19</Width>
     </PropertyDefn>
+	<PropertyDefn>
+      <Name>koniecWersjiObiektu</Name>
+      <ElementPath>x_cyklZycia|BT_CyklZyciaInfo|koniecWersjiObiektu</ElementPath>
+      <Type>String</Type>
+      <Width>19</Width>
+    </PropertyDefn>
     <PropertyDefn>
       <Name>x_dataUtworzenia</Name>
       <ElementPath>x_dataUtworzenia</ElementPath>
