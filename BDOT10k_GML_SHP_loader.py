@@ -608,7 +608,7 @@ class BDOT10k_GML_SHP_loader:
             
             progressMessageBar = iface.messageBar().createMessage("Postęp importowania BDOT10k...")
             progress = QProgressBar()
-            progress.setMaximum(86)
+            progress.setMaximum(91)
             progress.setAlignment(Qt.AlignLeft|Qt.AlignVCenter)
             progressMessageBar.layout().addWidget(progress)
             iface.messageBar().pushWidget(progressMessageBar, Qgis.Info)
@@ -776,7 +776,21 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     nazwy_kanalow_na_linii = None
-            progress.setValue(6)            
+            progress.setValue(6)
+            if os.path.exists(path+przestrzen_nazw+'__OT_PTWP_A.'+formatPliku):
+                copyfile(qmlPath/Path("nazwy zbiornikow.qml"), path+przestrzen_nazw+'__nazwy zbiornikow.qml')
+                nazwy_zbiornikow = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTWP_A."+formatPliku, przestrzen_nazw+"__nazwy zbiornikow","ogr")
+                if nazwy_zbiornikow.featureCount()>0:
+                    if formatPliku=="xml" and nazwy_zbiornikow.fields().indexFromName("koniecWersjiObiektu")!=-1:
+                        nazwy_zbiornikow.setSubsetString("koniecWersjiObiektu is null")
+                    QgsProject.instance().addMapLayer(nazwy_zbiornikow, False)
+                    groupNapisy.addLayer(nazwy_zbiornikow)
+                    nazwy_zbiornikow.loadNamedStyle(path+przestrzen_nazw+'__nazwy zbiornikow.qml')
+                    myLayerNode = root.findLayer(nazwy_zbiornikow.id())
+                    myLayerNode.setExpanded(False)
+                else:
+                    nazwy_zbiornikow = None
+            progress.setValue(7)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTLZ_A.'+formatPliku):
                 copyfile(qmlPath/Path("nazwy placow.qml"), path+przestrzen_nazw+'__nazwy placow.qml')
                 nazwy_placow = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTPL_A."+formatPliku, przestrzen_nazw+"__nazwy placow","ogr")
@@ -790,7 +804,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     nazwy_placow = None
-            progress.setValue(7)            
+            progress.setValue(8)            
             if os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SWRS_L.gfs"), path+przestrzen_nazw+'__OT_SWRS_L.gfs')
@@ -816,7 +830,7 @@ class BDOT10k_GML_SHP_loader:
                 else:
                     nazwy_rzek_nad_linia = None
                     nazwy_rzek_na_linii = None
-            progress.setValue(8)            
+            progress.setValue(9)            
             if os.path.exists(path+przestrzen_nazw+'__OT_ADMS_P.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_ADMS_P.gfs"), path+przestrzen_nazw+'__OT_ADMS_P.gfs')
@@ -867,7 +881,7 @@ class BDOT10k_GML_SHP_loader:
                     OT_ADMS_P_Msc = None
                     OT_ADMS_P_Cms = None
                     OT_ADMS_P_WsCws = None
-            progress.setValue(9)            
+            progress.setValue(10)            
             if os.path.exists(path+przestrzen_nazw+'__OT_KUSK_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUSK_A opis.qml"), path+przestrzen_nazw+'__OT_KUSK_A opis.qml')
                 OT_KUSK_A_opis = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUSK_A."+formatPliku, przestrzen_nazw+"__OT_KUSK_A opis","ogr")
@@ -881,7 +895,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUSK_A_opis = None
-            progress.setValue(10)            
+            progress.setValue(11)            
             if os.path.exists(path+przestrzen_nazw+'__OT_KUKO_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUKO_A opis.qml"), path+przestrzen_nazw+'__OT_KUKO_A opis.qml')
                 OT_KUKO_A_opis = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUKO_A."+formatPliku, przestrzen_nazw+"__OT_KUKO_A opis","ogr")
@@ -895,7 +909,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUKO_A_opis = None
-            progress.setValue(11)            
+            progress.setValue(12)            
             if os.path.exists(path+przestrzen_nazw+'__OT_KUZA_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUZA_A opis.qml"), path+przestrzen_nazw+'__OT_KUZA_A opis.qml')
                 OT_KUZA_A_opis = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUZA_A."+formatPliku, przestrzen_nazw+"__OT_KUZA_A opis","ogr")
@@ -909,7 +923,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUZA_A_opis = None
-            progress.setValue(12)            
+            progress.setValue(13)            
             if os.path.exists(path+przestrzen_nazw+'__OT_KUOS_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUOS_A opis.qml"), path+przestrzen_nazw+'__OT_KUOS_A opis.qml')
                 OT_KUOS_A_opis = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUOS_A."+formatPliku, przestrzen_nazw+"__OT_KUOS_A opis","ogr")
@@ -923,7 +937,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUOS_A_opis = None
-            progress.setValue(13)            
+            progress.setValue(14)            
             if os.path.exists(path+przestrzen_nazw+'__OT_BUIT_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUIT_P.qml"), path+przestrzen_nazw+'__OT_BUIT_P.qml')
                 OT_BUIT_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUIT_P."+formatPliku, przestrzen_nazw+"__OT_BUIT_P","ogr")
@@ -936,7 +950,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUIT_P = None
-            progress.setValue(14)            
+            progress.setValue(15)            
             if os.path.exists(path+przestrzen_nazw+'__OT_OIOR_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIOR_P.qml"), path+przestrzen_nazw+'__OT_OIOR_P.qml')
                 OT_OIOR_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIOR_P."+formatPliku, przestrzen_nazw+"__OT_OIOR_P","ogr")
@@ -949,7 +963,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIOR_P = None
-            progress.setValue(15)
+            progress.setValue(16)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIKM_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIKM_P.qml"), path+przestrzen_nazw+'__OT_OIKM_P.qml')
                 OT_OIKM_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIKM_P."+formatPliku, przestrzen_nazw+"__OT_OIKM_P","ogr")
@@ -962,7 +976,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIKM_P = None
-            progress.setValue(16)
+            progress.setValue(17)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUWT_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUWT_P.qml"), path+przestrzen_nazw+'__OT_BUWT_P.qml')
                 OT_BUWT_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUWT_P."+formatPliku, przestrzen_nazw+"__OT_BUWT_P","ogr")
@@ -975,7 +989,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUWT_P = None
-            progress.setValue(17)
+            progress.setValue(18)
             if os.path.exists(path+przestrzen_nazw+'__OT_KUKO_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUKO_P.qml"), path+przestrzen_nazw+'__OT_KUKO_P.qml')
                 OT_KUKO_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUKO_P."+formatPliku, przestrzen_nazw+"__OT_KUKO_P","ogr")
@@ -988,7 +1002,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUKO_P = None
-            progress.setValue(18)
+            progress.setValue(19)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUZT_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUZT_P.qml"), path+przestrzen_nazw+'__OT_BUZT_P.qml')
                 OT_BUZT_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUZT_P."+formatPliku, przestrzen_nazw+"__OT_BUZT_P","ogr")
@@ -1001,7 +1015,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUZT_P = None
-            progress.setValue(19)
+            progress.setValue(20)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIPR_P.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIPR_P.qml"), path+przestrzen_nazw+'__OT_OIPR_P.qml')
                 OT_OIPR_P = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIPR_P."+formatPliku, przestrzen_nazw+"__OT_OIPR_P","ogr")
@@ -1014,7 +1028,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIPR_P = None
-            progress.setValue(20)           
+            progress.setValue(21)           
             if os.path.exists(path+przestrzen_nazw+'__OT_BUIN_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUIN_L znaki punktowe.qml"), path+przestrzen_nazw+'__OT_BUIN_L znaki punktowe.qml')
                 OT_BUIN_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUIN_L."+formatPliku, przestrzen_nazw+"__OT_BUIN_L","ogr")
@@ -1028,7 +1042,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUIN_L = None
-            progress.setValue(21)
+            progress.setValue(22)
             if os.path.exists(path+przestrzen_nazw+'__OT_ADJA_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_ADJA_A.qml"), path+przestrzen_nazw+'__OT_ADJA_A.qml')
                 OT_ADJA_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_ADJA_A."+formatPliku, przestrzen_nazw+"__OT_ADJA_A","ogr")
@@ -1041,7 +1055,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_ADJA_A = None
-            progress.setValue(22)   
+            progress.setValue(23)   
             if os.path.exists(path+przestrzen_nazw+'__OT_BUTR_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUTR_L.qml"), path+przestrzen_nazw+'__OT_BUTR_L.qml')
                 OT_BUTR_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUTR_L."+formatPliku, przestrzen_nazw+"__OT_BUTR_L","ogr")
@@ -1054,7 +1068,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUTR_L = None
-            progress.setValue(23)
+            progress.setValue(24)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIOR_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIOR_L.qml"), path+przestrzen_nazw+'__OT_OIOR_L.qml')
                 OT_OIOR_L= QgsVectorLayer(path+przestrzen_nazw+"__OT_OIOR_L."+formatPliku, przestrzen_nazw+"__OT_OIOR_L","ogr")
@@ -1067,7 +1081,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIOR_L = None
-            progress.setValue(24)
+            progress.setValue(25)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUZT_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUZT_A.qml"), path+przestrzen_nazw+'__OT_BUZT_A.qml')
                 OT_BUZT_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUZT_A."+formatPliku, przestrzen_nazw+"__OT_BUZT_A","ogr")
@@ -1080,7 +1094,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUZT_A = None
-            progress.setValue(25)
+            progress.setValue(26)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIOR_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIOR_A.qml"), path+przestrzen_nazw+'__OT_OIOR_A.qml')
                 OT_OIOR_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIOR_A."+formatPliku, przestrzen_nazw+"__OT_OIOR_A","ogr")
@@ -1093,7 +1107,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIOR_A = None
-            progress.setValue(26)
+            progress.setValue(27)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUSP_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUSP_L.qml"), path+przestrzen_nazw+'__OT_BUSP_L.qml')
                 OT_BUSP_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUSP_L."+formatPliku, przestrzen_nazw+"__OT_BUSP_L","ogr")
@@ -1106,7 +1120,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUSP_L = None
-            progress.setValue(27)
+            progress.setValue(28)
             if os.path.exists(path+przestrzen_nazw+'__OT_SULN_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SULN_L.qml"), path+przestrzen_nazw+'__OT_SULN_L.qml')
                 OT_SULN_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_SULN_L."+formatPliku, przestrzen_nazw+"__OT_SULN_L","ogr")
@@ -1119,7 +1133,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SULN_L = None
-            progress.setValue(28)
+            progress.setValue(29)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKRP_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SKRP_L polozenie 1.qml"), path+przestrzen_nazw+'__OT_SKRP_L polozenie 1.qml')
                 OT_SKRP_Lp1 = QgsVectorLayer(path+przestrzen_nazw+"__OT_SKRP_L."+formatPliku, przestrzen_nazw+"__OT_SKRP_L polozenie 1","ogr")
@@ -1139,7 +1153,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKRP_Lp1 = None
-            progress.setValue(29)
+            progress.setValue(30)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKTR_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SKTR_L.gfs"), path+przestrzen_nazw+'__OT_SKTR_L.gfs')
@@ -1162,7 +1176,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKTR_Lp1 = None
-            progress.setValue(30)
+            progress.setValue(31)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKJZ_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SKJZ_L polozenie 1, 2.qml"), path+przestrzen_nazw+'__OT_SKJZ_L polozenie 1, 2.qml')
                 OT_SKJZ_Lp12 = QgsVectorLayer(path+przestrzen_nazw+"__OT_SKJZ_L."+formatPliku, przestrzen_nazw+"__OT_SKJZ_L polozenie 1, 2","ogr")
@@ -1181,7 +1195,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKJZ_Lp12 = None
-            progress.setValue(31)
+            progress.setValue(32)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUIN_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUIN_L.qml"), path+przestrzen_nazw+'__OT_BUIN_L.qml')
                 OT_BUIN_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUIN_L."+formatPliku, przestrzen_nazw+"__OT_BUIN_L","ogr")
@@ -1194,7 +1208,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUIN_L = None
-            progress.setValue(32)    
+            progress.setValue(33)    
             if os.path.exists(path+przestrzen_nazw+'__OT_BUBD_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUBD_A.qml"), path+przestrzen_nazw+'__OT_BUBD_A.qml')
                 OT_BUBD_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUBD_A."+formatPliku, przestrzen_nazw+"__OT_BUBD_A","ogr")
@@ -1207,7 +1221,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUBD_A = None
-            progress.setValue(33)
+            progress.setValue(34)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUIT_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUIT_A.qml"), path+przestrzen_nazw+'__OT_BUIT_A.qml')
                 OT_BUIT_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUIT_A."+formatPliku, przestrzen_nazw+"__OT_BUIT_A","ogr")
@@ -1220,7 +1234,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUIT_A = None
-            progress.setValue(34)
+            progress.setValue(35)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKTR_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SKTR_L.gfs"), path+przestrzen_nazw+'__OT_SKTR_L.gfs')
@@ -1242,7 +1256,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKTR_L = None
-            progress.setValue(35)
+            progress.setValue(36)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKJZ_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SKJZ_L.qml"), path+przestrzen_nazw+'__OT_SKJZ_L.qml')
                 OT_SKJZ_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_SKJZ_L."+formatPliku, przestrzen_nazw+"__OT_SKJZ_L","ogr")
@@ -1255,7 +1269,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKJZ_L = None
-            progress.setValue(36)
+            progress.setValue(37)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUIB_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUIB_A.qml"), path+przestrzen_nazw+'__OT_BUIB_A.qml')
                 OT_BUIB_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUIB_A."+formatPliku, przestrzen_nazw+"__OT_BUIB_A","ogr")
@@ -1268,7 +1282,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUIB_A = None
-            progress.setValue(37)
+            progress.setValue(38)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKTR_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SKTR_L.qml"), path+przestrzen_nazw+'__OT_SKTR_L polozenie -1.qml')
                 OT_SKTR_Lpm1 = QgsVectorLayer(path+przestrzen_nazw+"__OT_SKTR_L."+formatPliku, przestrzen_nazw+"__OT_SKTR_L polozenie -1","ogr")
@@ -1288,7 +1302,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKTR_Lpm1 = None
-            progress.setValue(38)
+            progress.setValue(39)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKJZ_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SKJZ_L.gfs"), path+przestrzen_nazw+'__OT_SKJZ_L.gfs')
@@ -1309,7 +1323,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKJZ_Lpm1 = None
-            progress.setValue(39)            
+            progress.setValue(40)            
             if os.path.exists(path+przestrzen_nazw+'__OT_BUSP_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUSP_A.qml"), path+przestrzen_nazw+'__OT_BUSP_A.qml')
                 OT_BUSP_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUSP_A."+formatPliku, przestrzen_nazw+"__OT_BUSP_A","ogr")
@@ -1322,7 +1336,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUSP_A = None
-            progress.setValue(40)
+            progress.setValue(41)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIPR_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIPR_L.qml"), path+przestrzen_nazw+'__OT_OIPR_L.qml')
                 OT_OIPR_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIPR_L."+formatPliku, przestrzen_nazw+"__OT_OIPR_L","ogr")
@@ -1335,7 +1349,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIPR_L = None
-            progress.setValue(41)
+            progress.setValue(42)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUZM_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUZM_L.qml"), path+przestrzen_nazw+'__OT_BUZM_L.qml')
                 OT_BUZM_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUZM_L."+formatPliku, przestrzen_nazw+"__OT_BUZM_L","ogr")
@@ -1348,7 +1362,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUZM_L = None
-            progress.setValue(42)
+            progress.setValue(43)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUUO_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUUO_L.qml"), path+przestrzen_nazw+'__OT_BUUO_L.qml')
                 OT_BUUO_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUUO_L."+formatPliku, przestrzen_nazw+"__OT_BUUO_L","ogr")
@@ -1361,7 +1375,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUUO_L = None
-            progress.setValue(43)
+            progress.setValue(44)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKRP_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SKRP_L.gfs"), path+przestrzen_nazw+'__OT_SKRP_L.gfs')
@@ -1376,7 +1390,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKRP_L = None
-            progress.setValue(44)
+            progress.setValue(45)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTPL_A.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_PTPL_A.gfs"), path+przestrzen_nazw+'__OT_PTPL_A.gfs')
@@ -1391,7 +1405,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTPL_A = None
-            progress.setValue(45)
+            progress.setValue(46)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUHD_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUHD_A.qml"), path+przestrzen_nazw+'__OT_BUHD_A.qml')
                 OT_BUHD_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUHD_A."+formatPliku, przestrzen_nazw+"__OT_BUHD_A","ogr")
@@ -1404,7 +1418,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUHD_A = None
-            progress.setValue(46)
+            progress.setValue(47)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUHD_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUHD_L.qml"), path+przestrzen_nazw+'__OT_BUHD_L.qml')
                 OT_BUHD_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUHD_L."+formatPliku, przestrzen_nazw+"__OT_BUHD_L","ogr")
@@ -1417,7 +1431,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUHD_L = None
-            progress.setValue(47)
+            progress.setValue(48)
             if os.path.exists(path+przestrzen_nazw+'__OT_SKPP_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SKPP_L.qml"), path+przestrzen_nazw+'__OT_SKPP_L.qml')
                 OT_SKPP_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_SKPP_L."+formatPliku, przestrzen_nazw+"__OT_SKPP_L","ogr")
@@ -1430,7 +1444,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SKPP_L = None
-            progress.setValue(48)
+            progress.setValue(49)
             if os.path.exists(path+przestrzen_nazw+'__OT_SUPR_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_SUPR_L.qml"), path+przestrzen_nazw+'__OT_SUPR_L.qml')
                 OT_SUPR_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_SUPR_L."+formatPliku, przestrzen_nazw+"__OT_SUPR_L","ogr")
@@ -1448,7 +1462,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SUPR_L = None
-            progress.setValue(49)            
+            progress.setValue(50)            
             if os.path.exists(path+przestrzen_nazw+'__OT_KUKO_A.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_KUKO_A.gfs"), path+przestrzen_nazw+'__OT_KUKO_A.gfs')
@@ -1463,7 +1477,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUKO_A = None
-            progress.setValue(50)
+            progress.setValue(51)
             if os.path.exists(path+przestrzen_nazw+'__OT_OISZ_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OISZ_A.qml"), path+przestrzen_nazw+'__OT_OISZ_A.qml')
                 OT_OISZ_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_OISZ_A."+formatPliku, przestrzen_nazw+"__OT_OISZ_A","ogr")
@@ -1476,7 +1490,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OISZ_A = None
-            progress.setValue(51)
+            progress.setValue(52)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTWP_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTWP_A.qml"), path+przestrzen_nazw+'__OT_PTWP_A.qml')
                 if formatPliku=="xml":
@@ -1491,7 +1505,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTWP_A = None
-            progress.setValue(52)
+            progress.setValue(53)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTSO_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTSO_A.qml"), path+przestrzen_nazw+'__OT_PTSO_A.qml')
                 OT_PTSO_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTSO_A."+formatPliku, przestrzen_nazw+"__OT_PTSO_A","ogr")
@@ -1504,7 +1518,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTSO_A = None
-            progress.setValue(53)
+            progress.setValue(54)
             if os.path.exists(path+przestrzen_nazw+'__OT_SWRM_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SWRM_L.gfs"), path+przestrzen_nazw+'__OT_SWRM_L.gfs')
@@ -1519,7 +1533,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SWRM_L = None
-            progress.setValue(54)
+            progress.setValue(55)
             if os.path.exists(path+przestrzen_nazw+'__OT_SWKN_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SWKN_L.gfs"), path+przestrzen_nazw+'__OT_SWKN_L.gfs')
@@ -1534,7 +1548,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SWKN_L = None
-            progress.setValue(55)
+            progress.setValue(56)
             if os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_SWRS_L.gfs"), path+przestrzen_nazw+'__OT_SWRS_L.gfs')
@@ -1549,7 +1563,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_SWRS_L = None
-            progress.setValue(56)
+            progress.setValue(57)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIKM_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIKM_L.qml"), path+przestrzen_nazw+'__OT_OIKM_L.qml')
                 OT_OIKM_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIKM_L."+formatPliku, przestrzen_nazw+"__OT_OIKM_L","ogr")
@@ -1562,7 +1576,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIKM_L = None
-            progress.setValue(57)
+            progress.setValue(58)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUIB_L.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUIB_L.qml"), path+przestrzen_nazw+'__OT_BUIB_L.qml')
                 OT_BUIB_L = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUIB_L."+formatPliku, przestrzen_nazw+"__OT_BUIB_L","ogr")
@@ -1575,7 +1589,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUIB_L = None
-            progress.setValue(58)
+            progress.setValue(59)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTKM_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTKM_A.qml"), path+przestrzen_nazw+'__OT_PTKM_A.qml')
                 OT_PTKM_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTKM_A."+formatPliku, przestrzen_nazw+"__OT_PTKM_A","ogr")
@@ -1588,7 +1602,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTKM_A = None
-            progress.setValue(59)
+            progress.setValue(60)
             if os.path.exists(path+przestrzen_nazw+'__OT_TCPK_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_TCPK_A.qml"), path+przestrzen_nazw+'__OT_TCPK_A.qml')
                 OT_TCPK_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_TCPK_A."+formatPliku, przestrzen_nazw+"__OT_TCPK_A","ogr")
@@ -1601,7 +1615,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_TCPK_A = None
-            progress.setValue(60)
+            progress.setValue(61)
             if os.path.exists(path+przestrzen_nazw+'__OT_TCPN_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_TCPN_A.qml"), path+przestrzen_nazw+'__OT_TCPN_A.qml')
                 OT_TCPN_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_TCPN_A."+formatPliku, przestrzen_nazw+"__OT_TCPN_A","ogr")
@@ -1614,7 +1628,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_TCPN_A = None
-            progress.setValue(61)
+            progress.setValue(62)
             if os.path.exists(path+przestrzen_nazw+'__OT_TCRZ_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_TCRZ_A.qml"), path+przestrzen_nazw+'__OT_TCRZ_A.qml')
                 OT_TCRZ_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_TCRZ_A."+formatPliku, przestrzen_nazw+"__OT_TCRZ_A","ogr")
@@ -1627,7 +1641,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_TCRZ_A = None
-            progress.setValue(62)
+            progress.setValue(63)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTRK_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTRK_A.qml"), path+przestrzen_nazw+'__OT_PTRK_A.qml')
                 OT_PTRK_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTRK_A."+formatPliku, przestrzen_nazw+"__OT_PTRK_A","ogr")
@@ -1640,7 +1654,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTRK_A = None
-            progress.setValue(63) 
+            progress.setValue(64) 
             if os.path.exists(path+przestrzen_nazw+'__OT_KUIK_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUIK_A.qml"), path+przestrzen_nazw+'__OT_KUIK_A.qml')
                 OT_KUIK_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUIK_A."+formatPliku, przestrzen_nazw+"__OT_KUIK_A","ogr")
@@ -1653,7 +1667,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUIK_A = None
-            progress.setValue(64)
+            progress.setValue(65)
             if os.path.exists(path+przestrzen_nazw+'__OT_OIMK_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_OIMK_A.qml"), path+przestrzen_nazw+'__OT_OIMK_A.qml')
                 OT_OIMK_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_OIMK_A."+formatPliku, przestrzen_nazw+"__OT_OIMK_A","ogr")
@@ -1666,7 +1680,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_OIMK_A = None
-            progress.setValue(65)
+            progress.setValue(66)
             if os.path.exists(path+przestrzen_nazw+'__OT_KUSC_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_KUSC_A.qml"), path+przestrzen_nazw+'__OT_KUSC_A.qml')
                 OT_KUSC_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_KUSC_A."+formatPliku, przestrzen_nazw+"__OT_KUSC_A","ogr")
@@ -1679,7 +1693,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUSC_A = None
-            progress.setValue(66)
+            progress.setValue(67)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTZB_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTZB_A.qml"), path+przestrzen_nazw+'__OT_PTZB_A.qml')
                 OT_PTZB_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTZB_A."+formatPliku, przestrzen_nazw+"__OT_PTZB_A","ogr")
@@ -1692,7 +1706,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTZB_A = None
-            progress.setValue(67)
+            progress.setValue(68)
             if os.path.exists(path+przestrzen_nazw+'__OT_KUPG_A.'+formatPliku):
                 if formatPliku=="xml":
                     copyfile(gfsPath/Path("OT_KUPG_A.gfs"), path+przestrzen_nazw+'__OT_KUPG_A.gfs')
@@ -1712,7 +1726,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_KUPG_A = None
-            progress.setValue(68)
+            progress.setValue(69)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTTR_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTTR_A.qml"), path+przestrzen_nazw+'__OT_PTTR_A.qml')
                 OT_PTTR_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTTR_A."+formatPliku, przestrzen_nazw+"__OT_PTTR_A","ogr")
@@ -1725,7 +1739,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTTR_A = None
-            progress.setValue(69)
+            progress.setValue(70)
             if os.path.exists(path+przestrzen_nazw+'__OT_BUCM_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_BUCM_A.qml"), path+przestrzen_nazw+'__OT_BUCM_A.qml')
                 OT_BUCM_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_BUCM_A."+formatPliku, przestrzen_nazw+"__OT_BUCM_A","ogr")
@@ -1738,7 +1752,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_BUCM_A = None
-            progress.setValue(70)
+            progress.setValue(71)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTWZ_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTWZ_A.qml"), path+przestrzen_nazw+'__OT_PTWZ_A.qml')
                 OT_PTWZ_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTWZ_A."+formatPliku, przestrzen_nazw+"__OT_PTWZ_A","ogr")
@@ -1751,7 +1765,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTWZ_A = None
-            progress.setValue(71)
+            progress.setValue(72)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTGN_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTGN_A.qml"), path+przestrzen_nazw+'__OT_PTGN_A.qml')
                 OT_PTGN_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTGN_A."+formatPliku, przestrzen_nazw+"__OT_PTGN_A","ogr")
@@ -1764,7 +1778,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTGN_A = None
-            progress.setValue(72)   
+            progress.setValue(73)   
             if os.path.exists(path+przestrzen_nazw+'__OT_PTUT_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTUT_A.qml"), path+przestrzen_nazw+'__OT_PTUT_A.qml')
                 OT_PTUT_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTUT_A."+formatPliku, przestrzen_nazw+"__OT_PTUT_A","ogr")
@@ -1777,7 +1791,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTUT_A = None
-            progress.setValue(73)
+            progress.setValue(74)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTLZ_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTLZ_A.qml"), path+przestrzen_nazw+'__OT_PTLZ_A.qml')
                 OT_PTLZ_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTLZ_A."+formatPliku, przestrzen_nazw+"__OT_PTLZ_A","ogr")
@@ -1790,7 +1804,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTLZ_A = None
-            progress.setValue(74)
+            progress.setValue(75)
             if os.path.exists(path+przestrzen_nazw+'__OT_TCON_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_TCON_A.qml"), path+przestrzen_nazw+'__OT_TCON_A.qml')
                 OT_TCON_A = QgsVectorLayer(path+przestrzen_nazw+"__OT_TCON_A."+formatPliku, przestrzen_nazw+"__OT_TCON_A","ogr")
@@ -1803,7 +1817,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_TCON_A = None
-            progress.setValue(75)
+            progress.setValue(76)
             if os.path.exists(path+przestrzen_nazw+'__OT_PTZB_A.'+formatPliku):
                 copyfile(qmlPath/Path("OT_PTZB_A_100k.qml"), path+przestrzen_nazw+'__OT_PTZB_A_100k.qml')
                 OT_PTZB_A_100k = QgsVectorLayer(path+przestrzen_nazw+"__OT_PTZB_A."+formatPliku, przestrzen_nazw+"__OT_PTZB_A_100k","ogr")
@@ -1817,7 +1831,7 @@ class BDOT10k_GML_SHP_loader:
                     myLayerNode.setExpanded(False)
                 else:
                     OT_PTZB_A_100k = None
-            progress.setValue(76)
+            progress.setValue(77)
 
             #join do warstwy nazwy_ulic
             if  os.path.exists(path+przestrzen_nazw+'__OT_Ulica.xml') and OT_Ulica != None and nazwy_ulic != None:
@@ -1838,7 +1852,7 @@ class BDOT10k_GML_SHP_loader:
                 nazwy_ulic.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa1"', nazwa1)
                 przedrostek1 = QgsField( 'ul_przedr1', QVariant.String )
                 nazwy_ulic.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek1"', przedrostek1)
-            progress.setValue(77)
+            progress.setValue(78)
             
             #join do warstwy nazwy_placow
             if os.path.exists(path+przestrzen_nazw+'__OT_Ulica.xml') and OT_Ulica != None and nazwy_placow != None:
@@ -1850,16 +1864,21 @@ class BDOT10k_GML_SHP_loader:
                 joinObject.setUsingMemoryCache(True)
                 joinObject.setJoinLayer(OT_Ulica)
                 nazwy_placow.addJoin(joinObject)
+                OT_PTPL_A.addJoin(joinObject)
                 #dodanie kolumn wirtualnych do warstwy nazwy_placow
                 nazwa1 = QgsField( 'ul_nazwa1', QVariant.String )
                 nazwy_placow.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa1"', nazwa1)
+                OT_PTPL_A.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa1"', nazwa1)
                 nazwa2 = QgsField( 'ul_nazwa2', QVariant.String )
                 nazwy_placow.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa2"', nazwa2)
+                OT_PTPL_A.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa2"', nazwa2)
                 przedrostek1 = QgsField( 'ul_przedr1', QVariant.String )
                 nazwy_placow.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek1"', przedrostek1)
+                OT_PTPL_A.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek1"', przedrostek1)
                 przedrostek2 = QgsField( 'ul_przedr2', QVariant.String )
                 nazwy_placow.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek2"', przedrostek2)
-            progress.setValue(78)
+                OT_PTPL_A.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek2"', przedrostek2)
+            progress.setValue(79)
             
             #join do warstwy OT_PTWP_A
             if os.path.exists(path+przestrzen_nazw+'__OT_ZbiornikWodny.xml') and os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_PTWP_A.xml') and OT_Ciek != None and OT_ZbiornikWodny != None and OT_PTWP_A != None:
@@ -1879,10 +1898,82 @@ class BDOT10k_GML_SHP_loader:
                 joinObject.setUsingMemoryCache(True)
                 joinObject.setJoinLayer(OT_Ciek)
                 OT_PTWP_A.addJoin(joinObject)
+                joinObject = QgsVectorLayerJoinInfo()
+                joinObject.setJoinFieldName('gml_id')
+                joinObject.setTargetFieldName('zbiornikWodny1_tmp')
+                joinObject.setJoinFieldNamesSubset(['nazwa'])
+                joinObject.setJoinLayerId(OT_ZbiornikWodny.id())
+                joinObject.setUsingMemoryCache(True)
+                joinObject.setJoinLayer(OT_ZbiornikWodny)
+                nazwy_zbiornikow.addJoin(joinObject)
                 #dodanie kolumn wirtualnych do warstwy OT_PTWP_A
                 nazwa = QgsField( 'ZB_NAZWA', QVariant.String )
                 OT_PTWP_A.addExpressionField('"'+przestrzen_nazw+'__OT_ZbiornikWodny_nazwa"', nazwa)
-            progress.setValue(79)
+                nazwa3 = QgsField( 'ZB_NAZWA', QVariant.String )
+                nazwy_zbiornikow.addExpressionField('"'+przestrzen_nazw+'__OT_ZbiornikWodny_nazwa"', nazwa3)
+                nazwa2 = QgsField( 'CI_NAZWA', QVariant.String )
+                OT_PTWP_A.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa2)
+            progress.setValue(80)
+            
+            #join do warstwy OT_SWRS_L
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.xml') and OT_Ciek != None and OT_SWRS_L != None:
+                joinObject = QgsVectorLayerJoinInfo()
+                joinObject.setJoinFieldName('gml_id')
+                joinObject.setTargetFieldName('ciek1_tmp')
+                joinObject.setJoinFieldNamesSubset(['nazwa'])
+                joinObject.setJoinLayerId(OT_Ciek.id())
+                joinObject.setUsingMemoryCache(True)
+                joinObject.setJoinLayer(OT_Ciek)
+                OT_SWRS_L.addJoin(joinObject)
+            progress.setValue(81)
+            
+            #join do warstwy OT_SWKN_L
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWKN_L.xml') and OT_Ciek != None and OT_SWKN_L != None:
+                joinObject = QgsVectorLayerJoinInfo()
+                joinObject.setJoinFieldName('gml_id')
+                joinObject.setTargetFieldName('ciek1_tmp')
+                joinObject.setJoinFieldNamesSubset(['nazwa'])
+                joinObject.setJoinLayerId(OT_Ciek.id())
+                joinObject.setUsingMemoryCache(True)
+                joinObject.setJoinLayer(OT_Ciek)
+                OT_SWKN_L.addJoin(joinObject)
+            progress.setValue(82)
+            
+            #join do warstwy OT_SWRM_L
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWRM_L.xml') and OT_Ciek != None and OT_SWRM_L != None:
+                joinObject = QgsVectorLayerJoinInfo()
+                joinObject.setJoinFieldName('gml_id')
+                joinObject.setTargetFieldName('ciek1_tmp')
+                joinObject.setJoinFieldNamesSubset(['nazwa'])
+                joinObject.setJoinLayerId(OT_Ciek.id())
+                joinObject.setUsingMemoryCache(True)
+                joinObject.setJoinLayer(OT_Ciek)
+                OT_SWRM_L.addJoin(joinObject)
+                #dodanie kolumn wirtualnych
+                nazwa = QgsField( 'CIEK_NAZWA', QVariant.String )
+                OT_SWRM_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
+            progress.setValue(83)
+            
+            #join do warstwy OT_SKJZ_L
+            if os.path.exists(path+przestrzen_nazw+'__OT_Ulica.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SKJZ_L.xml') and OT_Ulica != None and OT_SKJZ_L != None:
+                joinObject = QgsVectorLayerJoinInfo()
+                joinObject.setJoinFieldName('gml_id')
+                joinObject.setTargetFieldName('ulica3_tmp')
+                joinObject.setJoinFieldNamesSubset(['nazwa2','przedrostek2','nazwa1','przedrostek1'])
+                joinObject.setJoinLayerId(OT_Ulica.id())
+                joinObject.setUsingMemoryCache(True)
+                joinObject.setJoinLayer(OT_Ulica)
+                OT_SKJZ_L.addJoin(joinObject)
+                #dodanie kolumn wirtualnych
+                nazwa2 = QgsField( 'ul_nazwa2', QVariant.String )
+                OT_SKJZ_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa2"', nazwa2)
+                przedrostek2 = QgsField( 'ul_przedr2', QVariant.String )
+                OT_SKJZ_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek2"', przedrostek2)
+                nazwa1 = QgsField( 'ul_nazwa1', QVariant.String )
+                OT_SKJZ_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_nazwa1"', nazwa1)
+                przedrostek1 = QgsField( 'ul_przedr1', QVariant.String )
+                OT_SKJZ_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ulica_przedrostek1"', przedrostek1)
+            progress.setValue(84)
             
             #join do warstwy nazwy_rzek_nad_linia
             if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.xml') and OT_Ciek != None and nazwy_rzek_nad_linia != None:
@@ -1897,7 +1988,8 @@ class BDOT10k_GML_SHP_loader:
                 #dodanie kolumn wirtualnych do warstwy nazwy_rzek_nad_linia
                 nazwa = QgsField( 'CIEK_NAZWA', QVariant.String )
                 nazwy_rzek_nad_linia.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
-            progress.setValue(80)
+                OT_SWRS_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
+            progress.setValue(85)
             
             #join do warstwy nazwy_rzek_na_linii
             if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWRS_L.xml') and OT_Ciek != None and nazwy_rzek_na_linii != None:
@@ -1912,7 +2004,7 @@ class BDOT10k_GML_SHP_loader:
                 #dodanie kolumn wirtualnych do warstwy nazwy_rzek_na_linii
                 nazwa = QgsField( 'CIEK_NAZWA', QVariant.String )
                 nazwy_rzek_na_linii.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
-            progress.setValue(81)
+            progress.setValue(86)
             
             #join do warstwy nazwy_kanalow_nad_linia
             if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWKN_L.xml') and OT_Ciek != None and nazwy_kanalow_nad_linia != None:
@@ -1927,7 +2019,8 @@ class BDOT10k_GML_SHP_loader:
                 #dodanie kolumn wirtualnych do warstwy nazwy_kanalow_nad_linia
                 nazwa = QgsField( 'CIEK_NAZWA', QVariant.String )
                 nazwy_kanalow_nad_linia.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
-            progress.setValue(82)
+                OT_SWKN_L.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
+            progress.setValue(87)
             
             #join do warstwy nazwy_kanalow_na_linii
             if os.path.exists(path+przestrzen_nazw+'__OT_Ciek.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SWKN_L.xml') and OT_Ciek != None and nazwy_kanalow_na_linii != None:
@@ -1942,7 +2035,7 @@ class BDOT10k_GML_SHP_loader:
                 #dodanie kolumn wirtualnych do warstwy nazwy_kanalow_na_linii
                 nazwa = QgsField( 'CIEK_NAZWA', QVariant.String )
                 nazwy_kanalow_na_linii.addExpressionField('"'+przestrzen_nazw+'__OT_Ciek_nazwa"', nazwa)
-            progress.setValue(83)
+            progress.setValue(88)
             
             #join do warstwy OT_KUPG_A
             if os.path.exists(path+przestrzen_nazw+'__OT_Elektrownia.xml') and os.path.exists(path+przestrzen_nazw+'__OT_KUPG_A.xml') and OT_Elektrownia!= None and OT_KUPG_A != None:
@@ -1970,7 +2063,7 @@ class BDOT10k_GML_SHP_loader:
                 OT_KUPG_A.addExpressionField('"'+przestrzen_nazw+'__OT_Kopalnia_kopalina"', nazwa)
                 nazwa = QgsField( 'kopalnia_rodzaj', QVariant.String )
                 OT_KUPG_A.addExpressionField('"'+przestrzen_nazw+'__OT_Kopalnia_rodzaj"', nazwa)
-            progress.setValue(84)
+            progress.setValue(89)
             
             #join do warstwy OT_KUKO_A
             if os.path.exists(path+przestrzen_nazw+'__OT_Lotnisko.xml') and os.path.exists(path+przestrzen_nazw+'__OT_KUKO_A.xml') and OT_Lotnisko != None and OT_KUKO_A != None:
@@ -2002,7 +2095,7 @@ class BDOT10k_GML_SHP_loader:
                 OT_KUKO_A.addExpressionField('"'+przestrzen_nazw+'__OT_Port_rodzaj"', nazwa)
                 nazwa = QgsField( 'port_lokalizacjaPortu', QVariant.String )
                 OT_KUKO_A.addExpressionField('"'+przestrzen_nazw+'__OT_Port_lokalizacjaPortu"', nazwa)
-            progress.setValue(85)
+            progress.setValue(90)
             
             #join do warstwy OT_SKTR_L
             if os.path.exists(path+przestrzen_nazw+'__OT_LiniaKolejowa.xml') and os.path.exists(path+przestrzen_nazw+'__OT_SKTR_L.xml') and OT_LiniaKolejowa != None and OT_SKTR_L != None:
@@ -2018,7 +2111,7 @@ class BDOT10k_GML_SHP_loader:
                 nazwa = QgsField( 'nrLinii', QVariant.String )
                 OT_SKTR_L.addExpressionField('"'+przestrzen_nazw+'__OT_LiniaKolejowa_nrLinii"', nazwa)
             
-            progress.setValue(86)
+            progress.setValue(91)
             time.sleep(1)
             iface.messageBar().clearWidgets()    
     pass
