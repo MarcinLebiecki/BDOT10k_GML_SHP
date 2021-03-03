@@ -1,214 +1,37 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis styleCategories="AllStyleCategories" simplifyMaxScale="1" simplifyDrawingHints="3" version="3.12.1-București" simplifyLocal="1" hasScaleBasedVisibilityFlag="0" simplifyAlgorithm="0" simplifyDrawingTol="2" minScale="10001" maxScale="1000" labelsEnabled="0" readOnly="1">
+<qgis hasScaleBasedVisibilityFlag="1" styleCategories="AllStyleCategories" simplifyLocal="1" simplifyDrawingHints="3" maxScale="1000" version="3.12.1-București" simplifyAlgorithm="0" minScale="10001" readOnly="1" labelsEnabled="1" simplifyDrawingTol="2" simplifyMaxScale="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 attr="KOD10K" forceraster="0" type="categorizedSymbol" symbollevels="0" enableorderby="0">
-    <categories>
-      <category value="0010_601" label="woda powierzchniowa" symbol="0" render="true"/>
-      <category value="0010_604" label="linia brzegowa" symbol="1" render="true"/>
-      <category value="0010_605" label="linia brzegowa nieokreślona" symbol="2" render="true"/>
-    </categories>
-    <symbols>
-      <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="fill" name="0">
-        <layer class="SimpleFill" pass="0" enabled="1" locked="0">
-          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-          <prop v="210,239,250,255" k="color"/>
-          <prop v="round" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MapUnit" k="offset_unit"/>
-          <prop v="83,174,221,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="3" k="outline_width"/>
-          <prop v="MapUnit" k="outline_width_unit"/>
-          <prop v="solid" k="style"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="fill" name="1">
-        <layer class="SimpleFill" pass="0" enabled="1" locked="0">
-          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-          <prop v="255,255,255,255" k="color"/>
-          <prop v="round" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MapUnit" k="offset_unit"/>
-          <prop v="83,174,221,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="3" k="outline_width"/>
-          <prop v="MapUnit" k="outline_width_unit"/>
-          <prop v="no" k="style"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-      <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="fill" name="2">
-        <layer class="SimpleLine" pass="0" enabled="1" locked="0">
-          <prop v="square" k="capstyle"/>
-          <prop v="40;10" k="customdash"/>
-          <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-          <prop v="MapUnit" k="customdash_unit"/>
-          <prop v="0" k="draw_inside_polygon"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="83,174,221,255" k="line_color"/>
-          <prop v="solid" k="line_style"/>
-          <prop v="3" k="line_width"/>
-          <prop v="MapUnit" k="line_width_unit"/>
-          <prop v="0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MapUnit" k="offset_unit"/>
-          <prop v="0" k="ring_filter"/>
-          <prop v="1" k="use_custom_dash"/>
-          <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </symbols>
-    <source-symbol>
-      <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="fill" name="0">
-        <layer class="SimpleFill" pass="0" enabled="1" locked="0">
-          <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-          <prop v="166,206,227,255" k="color"/>
-          <prop v="bevel" k="joinstyle"/>
-          <prop v="0,0" k="offset"/>
-          <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-          <prop v="MM" k="offset_unit"/>
-          <prop v="7,97,255,255" k="outline_color"/>
-          <prop v="solid" k="outline_style"/>
-          <prop v="0.26" k="outline_width"/>
-          <prop v="MM" k="outline_width_unit"/>
-          <prop v="solid" k="style"/>
-          <data_defined_properties>
-            <Option type="Map">
-              <Option value="" type="QString" name="name"/>
-              <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
-            </Option>
-          </data_defined_properties>
-        </layer>
-      </symbol>
-    </source-symbol>
-    <rotation/>
-    <sizescale/>
-    <effect type="effectStack" enabled="0">
-      <effect type="dropShadow">
-        <prop v="13" k="blend_mode"/>
-        <prop v="2.645" k="blur_level"/>
-        <prop v="MM" k="blur_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
-        <prop v="0,0,0,255" k="color"/>
-        <prop v="2" k="draw_mode"/>
-        <prop v="0" k="enabled"/>
-        <prop v="135" k="offset_angle"/>
-        <prop v="2" k="offset_distance"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
-        <prop v="1" k="opacity"/>
-      </effect>
-      <effect type="outerGlow">
-        <prop v="0" k="blend_mode"/>
-        <prop v="0" k="blur_level"/>
-        <prop v="MM" k="blur_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
-        <prop v="0,0,255,255" k="color1"/>
-        <prop v="0,255,0,255" k="color2"/>
-        <prop v="0" k="color_type"/>
-        <prop v="0" k="discrete"/>
-        <prop v="2" k="draw_mode"/>
-        <prop v="1" k="enabled"/>
-        <prop v="0.269" k="opacity"/>
-        <prop v="gradient" k="rampType"/>
-        <prop v="255,255,255,255" k="single_color"/>
-        <prop v="1" k="spread"/>
-        <prop v="MapUnit" k="spread_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
-      </effect>
-      <effect type="drawSource">
-        <prop v="14" k="blend_mode"/>
-        <prop v="1" k="draw_mode"/>
-        <prop v="0" k="enabled"/>
-        <prop v="0.377" k="opacity"/>
-      </effect>
-      <effect type="innerShadow">
-        <prop v="13" k="blend_mode"/>
-        <prop v="2.645" k="blur_level"/>
-        <prop v="MM" k="blur_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
-        <prop v="0,0,0,255" k="color"/>
-        <prop v="2" k="draw_mode"/>
-        <prop v="0" k="enabled"/>
-        <prop v="135" k="offset_angle"/>
-        <prop v="2" k="offset_distance"/>
-        <prop v="MM" k="offset_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="offset_unit_scale"/>
-        <prop v="1" k="opacity"/>
-      </effect>
-      <effect type="innerGlow">
-        <prop v="0" k="blend_mode"/>
-        <prop v="0.7935" k="blur_level"/>
-        <prop v="MM" k="blur_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="blur_unit_scale"/>
-        <prop v="0,0,255,255" k="color1"/>
-        <prop v="0,255,0,255" k="color2"/>
-        <prop v="0" k="color_type"/>
-        <prop v="0" k="discrete"/>
-        <prop v="2" k="draw_mode"/>
-        <prop v="0" k="enabled"/>
-        <prop v="0.5" k="opacity"/>
-        <prop v="gradient" k="rampType"/>
-        <prop v="255,255,255,255" k="single_color"/>
-        <prop v="2" k="spread"/>
-        <prop v="MM" k="spread_unit"/>
-        <prop v="3x:0,0,0,0,0,0" k="spread_unit_scale"/>
-      </effect>
-    </effect>
-  </renderer-v2>
+  <renderer-v2 type="nullSymbol"/>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontLetterSpacing="0" fontCapitals="0" previewBkgrdColor="255,255,255,255" fontSizeUnit="MapUnit" fontItalic="1" multilineHeight="1" fontStrikeout="0" textOpacity="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" namedStyle="Italic" fontWordSpacing="0" fontWeight="50" fontKerning="1" fontSize="18" textOrientation="horizontal" fieldName=" if(rodzaj='Ps' or rodzaj = 'wodyStojace',ZB_NAZWA,'')" fontUnderline="0" textColor="17,150,206,255" isExpression="1" useSubstitutions="0" fontFamily="Cambria" blendMode="0">
-        <text-buffer bufferJoinStyle="64" bufferSizeUnits="MM" bufferColor="255,255,255,255" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferBlendMode="0" bufferDraw="0" bufferSize="1" bufferNoFill="0" bufferOpacity="1"/>
-        <text-mask maskJoinStyle="64" maskSize="1.5" maskSizeUnits="MM" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskType="0" maskOpacity="1" maskEnabled="0"/>
-        <background shapeRadiiUnit="MM" shapeOffsetX="0" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeSizeType="0" shapeSizeUnit="MM" shapeFillColor="255,255,255,255" shapeBlendMode="0" shapeOpacity="1" shapeBorderWidth="0" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiY="0" shapeBorderColor="128,128,128,255" shapeSVGFile="" shapeOffsetUnit="MM" shapeRotation="0" shapeRotationType="0" shapeType="0" shapeJoinStyle="64" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="0" shapeRadiiX="0" shapeDraw="0" shapeBorderWidthUnit="MM">
-          <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="marker" name="markerSymbol">
-            <layer class="SimpleMarker" pass="0" enabled="1" locked="0">
-              <prop v="0" k="angle"/>
-              <prop v="229,182,54,255" k="color"/>
-              <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="circle" k="name"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="diameter" k="scale_method"/>
-              <prop v="2" k="size"/>
-              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-              <prop v="MM" k="size_unit"/>
-              <prop v="1" k="vertical_anchor_point"/>
+      <text-style isExpression="1" fontFamily="Cambria" blendMode="0" fontWordSpacing="0" fontWeight="50" fontLetterSpacing="0" multilineHeight="1" fontKerning="1" namedStyle="Regular" useSubstitutions="0" fontSize="20" fontSizeUnit="MapUnit" textOpacity="1" fontUnderline="0" previewBkgrdColor="255,255,255,255" textColor="17,150,206,255" fontCapitals="0" fontItalic="0" textOrientation="horizontal" fontStrikeout="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" fieldName=" if(rodzaj='Ps' or rodzaj = 'wodyStojace',ZB_NAZWA,'')">
+        <text-buffer bufferSize="1" bufferSizeUnits="MM" bufferBlendMode="0" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferColor="255,255,255,255" bufferOpacity="1" bufferDraw="0" bufferJoinStyle="64" bufferNoFill="0"/>
+        <text-mask maskSizeUnits="MM" maskType="0" maskJoinStyle="64" maskedSymbolLayers="" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskSize="1.5" maskOpacity="1" maskEnabled="0"/>
+        <background shapeDraw="0" shapeRadiiX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetUnit="MM" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeBorderColor="128,128,128,255" shapeBorderWidth="0" shapeJoinStyle="64" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeX="0" shapeOffsetX="0" shapeOffsetY="0" shapeRadiiY="0" shapeFillColor="255,255,255,255" shapeRadiiUnit="MM" shapeSizeUnit="MM" shapeBorderWidthUnit="MM" shapeBlendMode="0" shapeRotation="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeOpacity="1" shapeType="0" shapeSizeY="0" shapeRotationType="0" shapeSizeType="0">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" type="marker" name="markerSymbol">
+            <layer locked="0" class="SimpleMarker" enabled="1" pass="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="229,182,54,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
                   <Option value="" type="QString" name="name"/>
@@ -219,7 +42,7 @@
             </layer>
           </symbol>
         </background>
-        <shadow shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowUnder="0" shadowBlendMode="6" shadowColor="0,0,0,255" shadowRadiusAlphaOnly="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowScale="100" shadowDraw="0" shadowOffsetDist="1" shadowRadius="1.5" shadowOffsetAngle="135" shadowOffsetUnit="MM" shadowOffsetGlobal="1" shadowOpacity="0.7" shadowRadiusUnit="MM"/>
+        <shadow shadowDraw="0" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOffsetUnit="MM" shadowScale="100" shadowOffsetAngle="135" shadowRadius="1.5" shadowUnder="0" shadowBlendMode="6" shadowRadiusUnit="MM" shadowColor="0,0,0,255" shadowOffsetDist="1" shadowRadiusAlphaOnly="0" shadowOpacity="0.7"/>
         <dd_properties>
           <Option type="Map">
             <Option value="" type="QString" name="name"/>
@@ -228,12 +51,12 @@
           </Option>
         </dd_properties>
         <substitutions>
-          <replacement caseSensitive="0" replace="Kan." wholeWord="1" match="Kanał"/>
+          <replacement match="Kanał" replace="Kan." caseSensitive="0" wholeWord="1"/>
         </substitutions>
       </text-style>
-      <text-format addDirectionSymbol="0" plussign="0" decimals="3" autoWrapLength="0" formatNumbers="0" useMaxLineLengthForAutoWrap="1" leftDirectionSymbol="&lt;" placeDirectionSymbol="0" multilineAlign="1" rightDirectionSymbol=">" reverseDirectionSymbol="0" wrapChar=""/>
-      <placement placement="0" offsetType="0" placementFlags="9" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" offsetUnits="MapUnit" geometryGeneratorType="PointGeometry" yOffset="-30" fitInPolygonOnly="0" maxCurvedCharAngleIn="20" dist="0" geometryGeneratorEnabled="0" preserveRotation="0" priority="10" maxCurvedCharAngleOut="-20" repeatDistanceUnits="MM" rotationAngle="0" overrunDistanceUnit="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" quadOffset="4" layerType="PolygonGeometry" xOffset="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" distUnits="MapUnit" overrunDistance="0" centroidInside="1" centroidWhole="0" geometryGenerator=""/>
-      <rendering minFeatureSize="0" scaleMin="1" maxNumLabels="2000" displayAll="1" fontMaxPixelSize="10000" upsidedownLabels="0" mergeLines="0" fontLimitPixelSize="0" zIndex="0" fontMinPixelSize="3" obstacleType="0" limitNumLabels="0" scaleVisibility="1" scaleMax="10001" labelPerPart="0" obstacle="1" drawLabels="1" obstacleFactor="1.84"/>
+      <text-format leftDirectionSymbol="&lt;" reverseDirectionSymbol="0" plussign="0" placeDirectionSymbol="0" formatNumbers="0" useMaxLineLengthForAutoWrap="1" rightDirectionSymbol=">" addDirectionSymbol="0" multilineAlign="1" autoWrapLength="0" decimals="3" wrapChar=""/>
+      <placement placement="0" fitInPolygonOnly="0" placementFlags="9" geometryGeneratorEnabled="0" distUnits="MapUnit" maxCurvedCharAngleOut="-20" overrunDistanceUnit="MM" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" dist="0" preserveRotation="0" quadOffset="4" offsetType="0" priority="10" geometryGeneratorType="PointGeometry" layerType="PolygonGeometry" xOffset="0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" centroidWhole="0" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0" repeatDistanceUnits="MM" rotationAngle="0" geometryGenerator="" offsetUnits="MapUnit" centroidInside="1" maxCurvedCharAngleIn="20" overrunDistance="0" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" yOffset="-30"/>
+      <rendering drawLabels="1" obstacle="1" obstacleType="0" limitNumLabels="0" minFeatureSize="0" scaleMin="1" maxNumLabels="2000" scaleVisibility="1" fontMaxPixelSize="10000" labelPerPart="0" fontMinPixelSize="3" mergeLines="0" displayAll="1" zIndex="0" scaleMax="10001" obstacleFactor="1.84" fontLimitPixelSize="0" upsidedownLabels="0"/>
       <dd_properties>
         <Option type="Map">
           <Option value="" type="QString" name="name"/>
@@ -267,7 +90,7 @@
           </Option>
           <Option value="false" type="bool" name="drawToAllParts"/>
           <Option value="0" type="QString" name="enabled"/>
-          <Option value="&lt;symbol force_rhr=&quot;0&quot; alpha=&quot;1&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot;>&lt;layer class=&quot;SimpleLine&quot; pass=&quot;0&quot; enabled=&quot;1&quot; locked=&quot;0&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
+          <Option value="&lt;symbol alpha=&quot;1&quot; force_rhr=&quot;0&quot; clip_to_extent=&quot;1&quot; type=&quot;line&quot; name=&quot;symbol&quot;>&lt;layer locked=&quot;0&quot; class=&quot;SimpleLine&quot; enabled=&quot;1&quot; pass=&quot;0&quot;>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; type=&quot;QString&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; type=&quot;QString&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" type="QString" name="lineSymbol"/>
           <Option value="0" type="double" name="minLength"/>
           <Option value="3x:0,0,0,0,0,0" type="QString" name="minLengthMapUnitScale"/>
           <Option value="MM" type="QString" name="minLengthUnit"/>
@@ -282,7 +105,9 @@
     </settings>
   </labeling>
   <customproperties>
-    <property value="COALESCE( &quot;SYS_ID&quot;, '&lt;NULL>' )" key="dualview/previewExpressions"/>
+    <property key="dualview/previewExpressions">
+      <value>COALESCE( "SYS_ID", '&lt;NULL>' )</value>
+    </property>
     <property value="0" key="embeddedWidgets/count"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
@@ -290,29 +115,29 @@
   <blendMode>0</blendMode>
   <featureBlendMode>1</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Pie">
-    <DiagramCategory sizeScale="3x:0,0,0,0,0,0" minimumSize="0" direction="1" scaleDependency="Area" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" maxScaleDenominator="1e+08" enabled="0" spacing="0" labelPlacementMethod="XHeight" opacity="1" height="15" width="15" penColor="#000000" minScaleDenominator="1000" penAlpha="255" rotationOffset="270" penWidth="0" diagramOrientation="Up" showAxis="0" spacingUnit="MM" sizeType="MM" spacingUnitScale="3x:0,0,0,0,0,0" barWidth="5" scaleBasedVisibility="0" backgroundAlpha="255" backgroundColor="#ffffff">
+  <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
+    <DiagramCategory direction="1" labelPlacementMethod="XHeight" enabled="0" minScaleDenominator="1000" penAlpha="255" backgroundColor="#ffffff" barWidth="5" spacing="0" scaleDependency="Area" rotationOffset="270" height="15" spacingUnit="MM" maxScaleDenominator="1e+08" backgroundAlpha="255" opacity="1" width="15" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" spacingUnitScale="3x:0,0,0,0,0,0" diagramOrientation="Up" penWidth="0" showAxis="0" scaleBasedVisibility="0" lineSizeType="MM" sizeScale="3x:0,0,0,0,0,0" sizeType="MM" minimumSize="0">
       <fontProperties style="" description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0"/>
       <attribute label="" field="" color="#000000"/>
       <axisSymbol>
-        <symbol force_rhr="0" alpha="1" clip_to_extent="1" type="line" name="">
-          <layer class="SimpleLine" pass="0" enabled="1" locked="0">
-            <prop v="square" k="capstyle"/>
-            <prop v="5;2" k="customdash"/>
-            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-            <prop v="MM" k="customdash_unit"/>
-            <prop v="0" k="draw_inside_polygon"/>
-            <prop v="bevel" k="joinstyle"/>
-            <prop v="35,35,35,255" k="line_color"/>
-            <prop v="solid" k="line_style"/>
-            <prop v="0.26" k="line_width"/>
-            <prop v="MM" k="line_width_unit"/>
-            <prop v="0" k="offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-            <prop v="MM" k="offset_unit"/>
-            <prop v="0" k="ring_filter"/>
-            <prop v="0" k="use_custom_dash"/>
-            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+        <symbol alpha="1" force_rhr="0" clip_to_extent="1" type="line" name="">
+          <layer locked="0" class="SimpleLine" enabled="1" pass="0">
+            <prop k="capstyle" v="square"/>
+            <prop k="customdash" v="5;2"/>
+            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="customdash_unit" v="MM"/>
+            <prop k="draw_inside_polygon" v="0"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="line_color" v="35,35,35,255"/>
+            <prop k="line_style" v="solid"/>
+            <prop k="line_width" v="0.26"/>
+            <prop k="line_width_unit" v="MM"/>
+            <prop k="offset" v="0"/>
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="ring_filter" v="0"/>
+            <prop k="use_custom_dash" v="0"/>
+            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" type="QString" name="name"/>
@@ -325,7 +150,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="0" priority="0" obstacle="0" zIndex="0" linePlacementFlags="2" dist="0" showAll="1">
+  <DiagramLayerSettings zIndex="0" placement="0" linePlacementFlags="2" priority="0" obstacle="0" dist="0" showAll="1">
     <properties>
       <Option type="Map">
         <Option value="" type="QString" name="name"/>
@@ -334,7 +159,7 @@
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration type="Map">
       <Option type="Map" name="QgsGeometryGapCheck">
@@ -564,14 +389,7 @@
         </config>
       </editWidget>
     </field>
-    <field name="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="PL.PZGiK.283.1261__OT_Ciek_nazwa">
+    <field name="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -632,51 +450,49 @@
     <alias index="28" field="idMPHP" name=""/>
     <alias index="29" field="ciek2" name=""/>
     <alias index="30" field="zbiornikWodny1" name=""/>
-    <alias index="31" field="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa" name=""/>
-    <alias index="32" field="PL.PZGiK.283.1261__OT_Ciek_nazwa" name=""/>
-    <alias index="33" field="ciek2_tmp" name=""/>
-    <alias index="34" field="zbiornikWodny1_tmp" name=""/>
-    <alias index="35" field="KOD10K" name=""/>
+    <alias index="31" field="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa" name=""/>
+    <alias index="32" field="ciek2_tmp" name=""/>
+    <alias index="33" field="zbiornikWodny1_tmp" name=""/>
+    <alias index="34" field="KOD10K" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default applyOnUpdate="0" field="gml_id" expression=""/>
-    <default applyOnUpdate="0" field="lokalnyId" expression=""/>
-    <default applyOnUpdate="0" field="przestrzenNazw" expression=""/>
-    <default applyOnUpdate="0" field="wersjaId" expression=""/>
-    <default applyOnUpdate="0" field="czyObiektBDOO" expression=""/>
-    <default applyOnUpdate="0" field="x_kod" expression=""/>
-    <default applyOnUpdate="0" field="x_skrKarto" expression=""/>
-    <default applyOnUpdate="0" field="x_katDoklGeom" expression=""/>
-    <default applyOnUpdate="0" field="x_zrodloDanychG" expression=""/>
-    <default applyOnUpdate="0" field="x_zrodloDanychA" expression=""/>
-    <default applyOnUpdate="0" field="x_katIstnienia" expression=""/>
-    <default applyOnUpdate="0" field="x_rodzajReprGeom" expression=""/>
-    <default applyOnUpdate="0" field="x_aktualnoscG" expression=""/>
-    <default applyOnUpdate="0" field="x_aktualnoscA" expression=""/>
-    <default applyOnUpdate="0" field="poczatekWersjiObiektu" expression=""/>
-    <default applyOnUpdate="0" field="koniecWersjiObiektu" expression=""/>
-    <default applyOnUpdate="0" field="x_dataUtworzenia" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto10k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto25k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto50k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto100k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto250k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto500k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto1000k" expression=""/>
-    <default applyOnUpdate="0" field="rodzaj" expression=""/>
-    <default applyOnUpdate="0" field="katIstnienia" expression=""/>
-    <default applyOnUpdate="0" field="poziomWody" expression=""/>
-    <default applyOnUpdate="0" field="x_informDodatkowa" expression=""/>
-    <default applyOnUpdate="0" field="idMPHP" expression=""/>
-    <default applyOnUpdate="0" field="ciek2" expression=""/>
-    <default applyOnUpdate="0" field="zbiornikWodny1" expression=""/>
-    <default applyOnUpdate="0" field="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa" expression=""/>
-    <default applyOnUpdate="0" field="PL.PZGiK.283.1261__OT_Ciek_nazwa" expression=""/>
-    <default applyOnUpdate="0" field="ciek2_tmp" expression=""/>
-    <default applyOnUpdate="0" field="zbiornikWodny1_tmp" expression=""/>
-    <default applyOnUpdate="0" field="KOD10K" expression=""/>
+    <default field="gml_id" applyOnUpdate="0" expression=""/>
+    <default field="lokalnyId" applyOnUpdate="0" expression=""/>
+    <default field="przestrzenNazw" applyOnUpdate="0" expression=""/>
+    <default field="wersjaId" applyOnUpdate="0" expression=""/>
+    <default field="czyObiektBDOO" applyOnUpdate="0" expression=""/>
+    <default field="x_kod" applyOnUpdate="0" expression=""/>
+    <default field="x_skrKarto" applyOnUpdate="0" expression=""/>
+    <default field="x_katDoklGeom" applyOnUpdate="0" expression=""/>
+    <default field="x_zrodloDanychG" applyOnUpdate="0" expression=""/>
+    <default field="x_zrodloDanychA" applyOnUpdate="0" expression=""/>
+    <default field="x_katIstnienia" applyOnUpdate="0" expression=""/>
+    <default field="x_rodzajReprGeom" applyOnUpdate="0" expression=""/>
+    <default field="x_aktualnoscG" applyOnUpdate="0" expression=""/>
+    <default field="x_aktualnoscA" applyOnUpdate="0" expression=""/>
+    <default field="poczatekWersjiObiektu" applyOnUpdate="0" expression=""/>
+    <default field="koniecWersjiObiektu" applyOnUpdate="0" expression=""/>
+    <default field="x_dataUtworzenia" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto10k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto25k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto50k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto100k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto250k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto500k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto1000k" applyOnUpdate="0" expression=""/>
+    <default field="rodzaj" applyOnUpdate="0" expression=""/>
+    <default field="katIstnienia" applyOnUpdate="0" expression=""/>
+    <default field="poziomWody" applyOnUpdate="0" expression=""/>
+    <default field="x_informDodatkowa" applyOnUpdate="0" expression=""/>
+    <default field="idMPHP" applyOnUpdate="0" expression=""/>
+    <default field="ciek2" applyOnUpdate="0" expression=""/>
+    <default field="zbiornikWodny1" applyOnUpdate="0" expression=""/>
+    <default field="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa" applyOnUpdate="0" expression=""/>
+    <default field="ciek2_tmp" applyOnUpdate="0" expression=""/>
+    <default field="zbiornikWodny1_tmp" applyOnUpdate="0" expression=""/>
+    <default field="KOD10K" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
     <constraint unique_strength="0" field="gml_id" notnull_strength="1" exp_strength="0" constraints="1"/>
@@ -710,97 +526,94 @@
     <constraint unique_strength="0" field="idMPHP" notnull_strength="0" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" field="ciek2" notnull_strength="0" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" field="zbiornikWodny1" notnull_strength="0" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" field="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa" notnull_strength="0" exp_strength="0" constraints="0"/>
-    <constraint unique_strength="0" field="PL.PZGiK.283.1261__OT_Ciek_nazwa" notnull_strength="0" exp_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa" notnull_strength="0" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" field="ciek2_tmp" notnull_strength="0" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" field="zbiornikWodny1_tmp" notnull_strength="0" exp_strength="0" constraints="0"/>
     <constraint unique_strength="0" field="KOD10K" notnull_strength="0" exp_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
-    <constraint desc="" exp="" field="gml_id"/>
-    <constraint desc="" exp="" field="lokalnyId"/>
-    <constraint desc="" exp="" field="przestrzenNazw"/>
-    <constraint desc="" exp="" field="wersjaId"/>
-    <constraint desc="" exp="" field="czyObiektBDOO"/>
-    <constraint desc="" exp="" field="x_kod"/>
-    <constraint desc="" exp="" field="x_skrKarto"/>
-    <constraint desc="" exp="" field="x_katDoklGeom"/>
-    <constraint desc="" exp="" field="x_zrodloDanychG"/>
-    <constraint desc="" exp="" field="x_zrodloDanychA"/>
-    <constraint desc="" exp="" field="x_katIstnienia"/>
-    <constraint desc="" exp="" field="x_rodzajReprGeom"/>
-    <constraint desc="" exp="" field="x_aktualnoscG"/>
-    <constraint desc="" exp="" field="x_aktualnoscA"/>
-    <constraint desc="" exp="" field="poczatekWersjiObiektu"/>
-    <constraint desc="" exp="" field="koniecWersjiObiektu"/>
-    <constraint desc="" exp="" field="x_dataUtworzenia"/>
-    <constraint desc="" exp="" field="x_kodKarto10k"/>
-    <constraint desc="" exp="" field="x_kodKarto25k"/>
-    <constraint desc="" exp="" field="x_kodKarto50k"/>
-    <constraint desc="" exp="" field="x_kodKarto100k"/>
-    <constraint desc="" exp="" field="x_kodKarto250k"/>
-    <constraint desc="" exp="" field="x_kodKarto500k"/>
-    <constraint desc="" exp="" field="x_kodKarto1000k"/>
-    <constraint desc="" exp="" field="rodzaj"/>
-    <constraint desc="" exp="" field="katIstnienia"/>
-    <constraint desc="" exp="" field="poziomWody"/>
-    <constraint desc="" exp="" field="x_informDodatkowa"/>
-    <constraint desc="" exp="" field="idMPHP"/>
-    <constraint desc="" exp="" field="ciek2"/>
-    <constraint desc="" exp="" field="zbiornikWodny1"/>
-    <constraint desc="" exp="" field="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa"/>
-    <constraint desc="" exp="" field="PL.PZGiK.283.1261__OT_Ciek_nazwa"/>
-    <constraint desc="" exp="" field="ciek2_tmp"/>
-    <constraint desc="" exp="" field="zbiornikWodny1_tmp"/>
-    <constraint desc="" exp="" field="KOD10K"/>
+    <constraint desc="" field="gml_id" exp=""/>
+    <constraint desc="" field="lokalnyId" exp=""/>
+    <constraint desc="" field="przestrzenNazw" exp=""/>
+    <constraint desc="" field="wersjaId" exp=""/>
+    <constraint desc="" field="czyObiektBDOO" exp=""/>
+    <constraint desc="" field="x_kod" exp=""/>
+    <constraint desc="" field="x_skrKarto" exp=""/>
+    <constraint desc="" field="x_katDoklGeom" exp=""/>
+    <constraint desc="" field="x_zrodloDanychG" exp=""/>
+    <constraint desc="" field="x_zrodloDanychA" exp=""/>
+    <constraint desc="" field="x_katIstnienia" exp=""/>
+    <constraint desc="" field="x_rodzajReprGeom" exp=""/>
+    <constraint desc="" field="x_aktualnoscG" exp=""/>
+    <constraint desc="" field="x_aktualnoscA" exp=""/>
+    <constraint desc="" field="poczatekWersjiObiektu" exp=""/>
+    <constraint desc="" field="koniecWersjiObiektu" exp=""/>
+    <constraint desc="" field="x_dataUtworzenia" exp=""/>
+    <constraint desc="" field="x_kodKarto10k" exp=""/>
+    <constraint desc="" field="x_kodKarto25k" exp=""/>
+    <constraint desc="" field="x_kodKarto50k" exp=""/>
+    <constraint desc="" field="x_kodKarto100k" exp=""/>
+    <constraint desc="" field="x_kodKarto250k" exp=""/>
+    <constraint desc="" field="x_kodKarto500k" exp=""/>
+    <constraint desc="" field="x_kodKarto1000k" exp=""/>
+    <constraint desc="" field="rodzaj" exp=""/>
+    <constraint desc="" field="katIstnienia" exp=""/>
+    <constraint desc="" field="poziomWody" exp=""/>
+    <constraint desc="" field="x_informDodatkowa" exp=""/>
+    <constraint desc="" field="idMPHP" exp=""/>
+    <constraint desc="" field="ciek2" exp=""/>
+    <constraint desc="" field="zbiornikWodny1" exp=""/>
+    <constraint desc="" field="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa" exp=""/>
+    <constraint desc="" field="ciek2_tmp" exp=""/>
+    <constraint desc="" field="zbiornikWodny1_tmp" exp=""/>
+    <constraint desc="" field="KOD10K" exp=""/>
   </constraintExpressions>
   <expressionfields>
-    <field comment="" subType="0" length="0" type="10" precision="0" typeName="string" expression="regexp_substr(ciek2,'#(.*)')" name="ciek2_tmp"/>
-    <field comment="" subType="0" length="0" type="10" precision="0" typeName="string" expression="regexp_substr(zbiornikWodny1,'#(.*)')" name="zbiornikWodny1_tmp"/>
-    <field comment="" subType="0" length="0" type="10" precision="0" typeName="string" expression=" &quot;x_kodKarto10k&quot; " name="KOD10K"/>
+    <field comment="" length="0" typeName="string" precision="0" expression="regexp_substr(ciek2,'#(.*)')" type="10" name="ciek2_tmp" subType="0"/>
+    <field comment="" length="0" typeName="string" precision="0" expression="regexp_substr(zbiornikWodny1,'#(.*)')" type="10" name="zbiornikWodny1_tmp" subType="0"/>
+    <field comment="" length="0" typeName="string" precision="0" expression=" &quot;x_kodKarto10k&quot; " type="10" name="KOD10K" subType="0"/>
   </expressionfields>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortOrder="0" sortExpression="&quot;zbiornikWodny1&quot;">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;KOD10K&quot;" sortOrder="0">
     <columns>
-      <column hidden="1" width="-1" type="actions"/>
-      <column hidden="1" width="-1" type="field" name="ciek2_tmp"/>
-      <column hidden="1" width="-1" type="field" name="zbiornikWodny1_tmp"/>
-      <column hidden="1" width="-1" type="field" name="KOD10K"/>
-      <column hidden="0" width="-1" type="field" name="gml_id"/>
-      <column hidden="0" width="-1" type="field" name="lokalnyId"/>
-      <column hidden="0" width="-1" type="field" name="przestrzenNazw"/>
-      <column hidden="0" width="-1" type="field" name="wersjaId"/>
-      <column hidden="0" width="-1" type="field" name="czyObiektBDOO"/>
-      <column hidden="0" width="-1" type="field" name="x_kod"/>
-      <column hidden="0" width="-1" type="field" name="x_skrKarto"/>
-      <column hidden="0" width="-1" type="field" name="x_katDoklGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_zrodloDanychG"/>
-      <column hidden="0" width="-1" type="field" name="x_zrodloDanychA"/>
-      <column hidden="0" width="-1" type="field" name="x_katIstnienia"/>
-      <column hidden="0" width="-1" type="field" name="x_rodzajReprGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_aktualnoscG"/>
-      <column hidden="0" width="-1" type="field" name="x_aktualnoscA"/>
-      <column hidden="0" width="-1" type="field" name="poczatekWersjiObiektu"/>
-      <column hidden="0" width="-1" type="field" name="x_dataUtworzenia"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto10k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto25k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto50k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto100k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto250k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto500k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto1000k"/>
-      <column hidden="0" width="-1" type="field" name="rodzaj"/>
-      <column hidden="0" width="-1" type="field" name="katIstnienia"/>
-      <column hidden="0" width="-1" type="field" name="poziomWody"/>
-      <column hidden="0" width="-1" type="field" name="x_informDodatkowa"/>
-      <column hidden="0" width="-1" type="field" name="idMPHP"/>
-      <column hidden="1" width="-1" type="field" name="ciek2"/>
-      <column hidden="1" width="-1" type="field" name="zbiornikWodny1"/>
-      <column hidden="0" width="-1" type="field" name="koniecWersjiObiektu"/>
-      <column hidden="0" width="-1" type="field" name="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa"/>
-      <column hidden="0" width="-1" type="field" name="PL.PZGiK.283.1261__OT_Ciek_nazwa"/>
+      <column hidden="1" type="actions" width="-1"/>
+      <column hidden="1" type="field" width="-1" name="ciek2_tmp"/>
+      <column hidden="1" type="field" width="-1" name="zbiornikWodny1_tmp"/>
+      <column hidden="1" type="field" width="-1" name="KOD10K"/>
+      <column hidden="0" type="field" width="-1" name="gml_id"/>
+      <column hidden="0" type="field" width="-1" name="lokalnyId"/>
+      <column hidden="0" type="field" width="-1" name="przestrzenNazw"/>
+      <column hidden="0" type="field" width="-1" name="wersjaId"/>
+      <column hidden="0" type="field" width="-1" name="czyObiektBDOO"/>
+      <column hidden="0" type="field" width="-1" name="x_kod"/>
+      <column hidden="0" type="field" width="-1" name="x_skrKarto"/>
+      <column hidden="0" type="field" width="-1" name="x_katDoklGeom"/>
+      <column hidden="0" type="field" width="-1" name="x_zrodloDanychG"/>
+      <column hidden="0" type="field" width="-1" name="x_zrodloDanychA"/>
+      <column hidden="0" type="field" width="-1" name="x_katIstnienia"/>
+      <column hidden="0" type="field" width="-1" name="x_rodzajReprGeom"/>
+      <column hidden="0" type="field" width="-1" name="x_aktualnoscG"/>
+      <column hidden="0" type="field" width="-1" name="x_aktualnoscA"/>
+      <column hidden="0" type="field" width="-1" name="poczatekWersjiObiektu"/>
+      <column hidden="0" type="field" width="-1" name="x_dataUtworzenia"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto10k"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto25k"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto50k"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto100k"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto250k"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto500k"/>
+      <column hidden="0" type="field" width="-1" name="x_kodKarto1000k"/>
+      <column hidden="0" type="field" width="-1" name="rodzaj"/>
+      <column hidden="0" type="field" width="-1" name="katIstnienia"/>
+      <column hidden="0" type="field" width="-1" name="poziomWody"/>
+      <column hidden="0" type="field" width="-1" name="x_informDodatkowa"/>
+      <column hidden="0" type="field" width="-1" name="idMPHP"/>
+      <column hidden="0" type="field" width="-1" name="ciek2"/>
+      <column hidden="0" type="field" width="-1" name="zbiornikWodny1"/>
+      <column hidden="0" type="field" width="-1" name="koniecWersjiObiektu"/>
+      <column hidden="0" type="field" width="235" name="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
@@ -838,7 +651,7 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="CIEK3_NIL"/>
     <field editable="1" name="CI_DLUGOSC"/>
     <field editable="1" name="CI_IDPRNG"/>
-    <field editable="0" name="CI_NAZWA"/>
+    <field editable="1" name="CI_NAZWA"/>
     <field editable="1" name="CI_PRNG_ID"/>
     <field editable="1" name="CI_PRNG_PN"/>
     <field editable="1" name="CI_PRNG_WE"/>
@@ -864,12 +677,11 @@ def my_form_open(dialog, layer, feature):
     <field editable="1" name="LOKALNYID"/>
     <field editable="0" name="PL.PZGiK.238.2476__OT_Ciek_nazwa"/>
     <field editable="0" name="PL.PZGiK.238.2476__OT_ZbiornikWodny_nazwa"/>
-    <field editable="0" name="PL.PZGiK.283.1261__OT_Ciek_nazwa"/>
-    <field editable="0" name="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa"/>
     <field editable="0" name="PL.PZGiK.330.1465__OT_Ciek_nazwa"/>
     <field editable="0" name="PL.PZGiK.330.1465__OT_ZbiornikWodny_nazwa"/>
-    <field editable="0" name="PL.PZGiK.333.0803__OT_Ciek_nazwa"/>
     <field editable="0" name="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa"/>
+    <field editable="0" name="PL.PZGiK.341.2816__OT_Ciek_nazwa"/>
+    <field editable="0" name="PL.PZGiK.341.2816__OT_ZbiornikWodny_nazwa"/>
     <field editable="0" name="PL.PZGiK.370.2604__OT_Ciek_nazwa"/>
     <field editable="0" name="PL.PZGiK.370.2604__OT_ZbiornikWodny_nazwa"/>
     <field editable="0" name="PL.PZGiK.994.0401__OT_Ciek_nazwa"/>
@@ -980,12 +792,11 @@ def my_form_open(dialog, layer, feature):
     <field labelOnTop="0" name="LOKALNYID"/>
     <field labelOnTop="0" name="PL.PZGiK.238.2476__OT_Ciek_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.238.2476__OT_ZbiornikWodny_nazwa"/>
-    <field labelOnTop="0" name="PL.PZGiK.283.1261__OT_Ciek_nazwa"/>
-    <field labelOnTop="0" name="PL.PZGiK.283.1261__OT_ZbiornikWodny_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.330.1465__OT_Ciek_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.330.1465__OT_ZbiornikWodny_nazwa"/>
-    <field labelOnTop="0" name="PL.PZGiK.333.0803__OT_Ciek_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.333.0803__OT_ZbiornikWodny_nazwa"/>
+    <field labelOnTop="0" name="PL.PZGiK.341.2816__OT_Ciek_nazwa"/>
+    <field labelOnTop="0" name="PL.PZGiK.341.2816__OT_ZbiornikWodny_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.370.2604__OT_Ciek_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.370.2604__OT_ZbiornikWodny_nazwa"/>
     <field labelOnTop="0" name="PL.PZGiK.994.0401__OT_Ciek_nazwa"/>

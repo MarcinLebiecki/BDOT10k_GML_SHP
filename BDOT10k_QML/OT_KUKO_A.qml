@@ -27,7 +27,7 @@
               <prop k="color" v="0,0,0,255"/>
               <prop k="fixedAspectRatio" v="0"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="//Mac/Home/Documents/KARTO10k/0010_142.svg"/>
+              <prop k="name" v="KARTO10k/0010_142.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>

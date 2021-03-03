@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="1" styleCategories="AllStyleCategories" minScale="10001" version="3.12.1-București" readOnly="1" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" labelsEnabled="1" simplifyDrawingHints="1" simplifyLocal="1">
+<qgis simplifyAlgorithm="0" styleCategories="AllStyleCategories" simplifyDrawingTol="1" labelsEnabled="1" version="3.12.1-București" minScale="10001" readOnly="1" hasScaleBasedVisibilityFlag="1" maxScale="0" simplifyDrawingHints="1" simplifyLocal="1" simplifyMaxScale="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
@@ -8,88 +8,86 @@
   <renderer-v2 type="nullSymbol"/>
   <labeling type="simple">
     <settings calloutType="simple">
-      <text-style fontCapitals="0" fontItalic="0" fontLetterSpacing="0" namedStyle="Normal" useSubstitutions="0" fontStrikeout="0" textOpacity="1" fontSizeUnit="MapUnit" isExpression="1" fontSizeMapUnitScale="3x:0,0,0,0,0,0" textColor="0,0,0,255" fieldName="if ( KATZARZ  = 'W' or KATZARZ = 'K' or KATZARZ = 'wojewodzka' or KATZARZ = 'krajowa', &quot;SZL_NUMER&quot;, '')" fontUnderline="0" textOrientation="horizontal" fontSize="14.5" blendMode="0" previewBkgrdColor="255,255,255,255" fontKerning="1" multilineHeight="1" fontWordSpacing="0" fontFamily="Arial" fontWeight="50">
-        <text-buffer bufferColor="255,255,255,255" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0" bufferSize="1" bufferJoinStyle="128" bufferDraw="0" bufferOpacity="1" bufferBlendMode="0" bufferSizeUnits="MM"/>
-        <text-mask maskType="0" maskOpacity="1" maskSize="1.5" maskSizeUnits="MM" maskedSymbolLayers="" maskJoinStyle="128" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskEnabled="0"/>
-        <background shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeRadiiX="0" shapeBorderWidth="1" shapeSVGFile="" shapeFillColor="255,255,255,255" shapeRotation="0" shapeOffsetUnit="MM" shapeBlendMode="0" shapeRadiiY="0" shapeDraw="1" shapeRotationType="0" shapeBorderColor="128,128,128,255" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeSizeY="1" shapeOffsetX="0" shapeSizeUnit="MapUnit" shapeJoinStyle="64" shapeSizeX="5" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeSizeType="0" shapeRadiiUnit="MM" shapeBorderWidthUnit="MapUnit" shapeOpacity="1" shapeType="0" shapeOffsetY="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0">
-          <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="marker" name="markerSymbol">
-            <layer class="SimpleMarker" locked="0" enabled="1" pass="0">
-              <prop v="0" k="angle"/>
-              <prop v="243,166,178,255" k="color"/>
-              <prop v="1" k="horizontal_anchor_point"/>
-              <prop v="bevel" k="joinstyle"/>
-              <prop v="circle" k="name"/>
-              <prop v="0,0" k="offset"/>
-              <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-              <prop v="MM" k="offset_unit"/>
-              <prop v="35,35,35,255" k="outline_color"/>
-              <prop v="solid" k="outline_style"/>
-              <prop v="0" k="outline_width"/>
-              <prop v="3x:0,0,0,0,0,0" k="outline_width_map_unit_scale"/>
-              <prop v="MM" k="outline_width_unit"/>
-              <prop v="diameter" k="scale_method"/>
-              <prop v="2" k="size"/>
-              <prop v="3x:0,0,0,0,0,0" k="size_map_unit_scale"/>
-              <prop v="MM" k="size_unit"/>
-              <prop v="1" k="vertical_anchor_point"/>
+      <text-style fontKerning="1" blendMode="0" fontSizeMapUnitScale="3x:0,0,0,0,0,0" previewBkgrdColor="255,255,255,255" textOrientation="horizontal" fontSize="14.5" textOpacity="1" fontWordSpacing="0" namedStyle="Normal" fieldName="if ( (KATZARZ  = 'W' or KATZARZ = 'K' or KATZARZ = 'wojewodzka' or KATZARZ = 'krajowa') and  $length >500, &quot;SZL_NUMER&quot;, '')" fontSizeUnit="MapUnit" fontLetterSpacing="0" useSubstitutions="0" fontStrikeout="0" textColor="0,0,0,255" multilineHeight="1" fontFamily="Arial" fontCapitals="0" fontUnderline="0" fontItalic="0" fontWeight="50" isExpression="1">
+        <text-buffer bufferOpacity="1" bufferDraw="0" bufferBlendMode="0" bufferColor="255,255,255,255" bufferSize="1" bufferJoinStyle="128" bufferSizeUnits="MM" bufferNoFill="1" bufferSizeMapUnitScale="3x:0,0,0,0,0,0"/>
+        <text-mask maskJoinStyle="128" maskSize="1.5" maskSizeUnits="MM" maskedSymbolLayers="" maskType="0" maskSizeMapUnitScale="3x:0,0,0,0,0,0" maskOpacity="1" maskEnabled="0"/>
+        <background shapeSizeType="0" shapeSizeUnit="MapUnit" shapeRadiiY="0" shapeRotation="0" shapeType="0" shapeRadiiUnit="MM" shapeBorderWidth="1" shapeRotationType="0" shapeRadiiX="0" shapeJoinStyle="64" shapeBorderWidthUnit="MapUnit" shapeSizeX="5" shapeSizeY="1" shapeBorderWidthMapUnitScale="3x:0,0,0,0,0,0" shapeBorderColor="128,128,128,255" shapeOffsetX="0" shapeRadiiMapUnitScale="3x:0,0,0,0,0,0" shapeSVGFile="" shapeOffsetMapUnitScale="3x:0,0,0,0,0,0" shapeOffsetY="0" shapeOpacity="1" shapeOffsetUnit="MM" shapeFillColor="255,255,255,255" shapeBlendMode="0" shapeSizeMapUnitScale="3x:0,0,0,0,0,0" shapeDraw="1">
+          <symbol clip_to_extent="1" name="markerSymbol" type="marker" alpha="1" force_rhr="0">
+            <layer class="SimpleMarker" enabled="1" locked="0" pass="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="243,166,178,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="35,35,35,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option type="QString" value="" name="name"/>
+                  <Option value="" name="name" type="QString"/>
                   <Option name="properties"/>
-                  <Option type="QString" value="collection" name="type"/>
+                  <Option value="collection" name="type" type="QString"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </background>
-        <shadow shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowOpacity="0.7" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowRadius="1.5" shadowOffsetUnit="MM" shadowRadiusUnit="MM" shadowBlendMode="6" shadowOffsetDist="1" shadowRadiusAlphaOnly="0" shadowOffsetGlobal="1" shadowColor="0,0,0,255" shadowOffsetAngle="135" shadowUnder="0" shadowScale="100" shadowDraw="0"/>
+        <shadow shadowOffsetUnit="MM" shadowRadiusUnit="MM" shadowUnder="0" shadowRadius="1.5" shadowOffsetGlobal="1" shadowRadiusAlphaOnly="0" shadowScale="100" shadowOpacity="0.7" shadowBlendMode="6" shadowOffsetMapUnitScale="3x:0,0,0,0,0,0" shadowDraw="0" shadowRadiusMapUnitScale="3x:0,0,0,0,0,0" shadowColor="0,0,0,255" shadowOffsetAngle="135" shadowOffsetDist="1"/>
         <dd_properties>
           <Option type="Map">
-            <Option type="QString" value="" name="name"/>
+            <Option value="" name="name" type="QString"/>
             <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
+            <Option value="collection" name="type" type="QString"/>
           </Option>
         </dd_properties>
         <substitutions/>
       </text-style>
-      <text-format multilineAlign="0" placeDirectionSymbol="0" addDirectionSymbol="0" reverseDirectionSymbol="0" leftDirectionSymbol="&lt;" wrapChar="" autoWrapLength="0" useMaxLineLengthForAutoWrap="1" rightDirectionSymbol=">" plussign="0" formatNumbers="0" decimals="3"/>
-      <placement placementFlags="9" xOffset="0" rotationAngle="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorEnabled="0" layerType="LineGeometry" quadOffset="4" geometryGeneratorType="PointGeometry" repeatDistance="0" repeatDistanceUnits="MM" geometryGenerator="" yOffset="0" placement="2" dist="0" offsetType="0" overrunDistance="0" centroidWhole="0" fitInPolygonOnly="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" maxCurvedCharAngleIn="25" distUnits="MM" overrunDistanceUnit="MM" distMapUnitScale="3x:0,0,0,0,0,0" preserveRotation="1" maxCurvedCharAngleOut="-25" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" centroidInside="0" offsetUnits="MM" priority="5"/>
-      <rendering drawLabels="1" scaleMax="0" maxNumLabels="2000" displayAll="0" scaleMin="0" zIndex="0" labelPerPart="0" mergeLines="1" fontLimitPixelSize="0" obstacle="1" fontMaxPixelSize="10000" upsidedownLabels="0" obstacleType="1" minFeatureSize="0" fontMinPixelSize="3" obstacleFactor="1" scaleVisibility="0" limitNumLabels="0"/>
+      <text-format wrapChar="" addDirectionSymbol="0" placeDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" autoWrapLength="0" multilineAlign="0" rightDirectionSymbol=">" useMaxLineLengthForAutoWrap="1" decimals="3" plussign="0" reverseDirectionSymbol="0"/>
+      <placement offsetType="0" centroidWhole="0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" repeatDistanceUnits="MM" geometryGeneratorEnabled="0" centroidInside="0" repeatDistanceMapUnitScale="3x:0,0,0,0,0,0" geometryGeneratorType="PointGeometry" rotationAngle="0" distUnits="MM" priority="5" overrunDistanceMapUnitScale="3x:0,0,0,0,0,0" overrunDistance="0" maxCurvedCharAngleOut="-25" overrunDistanceUnit="MM" labelOffsetMapUnitScale="3x:0,0,0,0,0,0" placement="2" dist="0" preserveRotation="1" fitInPolygonOnly="0" placementFlags="9" layerType="LineGeometry" quadOffset="4" offsetUnits="MM" geometryGenerator="" xOffset="0" maxCurvedCharAngleIn="25" yOffset="0" distMapUnitScale="3x:0,0,0,0,0,0" repeatDistance="0"/>
+      <rendering labelPerPart="0" limitNumLabels="0" displayAll="0" fontLimitPixelSize="0" maxNumLabels="2000" obstacle="1" fontMinPixelSize="3" minFeatureSize="0" scaleMax="0" obstacleType="1" obstacleFactor="1" zIndex="0" drawLabels="1" scaleVisibility="0" fontMaxPixelSize="10000" upsidedownLabels="0" mergeLines="1" scaleMin="0"/>
       <dd_properties>
         <Option type="Map">
-          <Option type="QString" value="" name="name"/>
+          <Option value="" name="name" type="QString"/>
           <Option name="properties"/>
-          <Option type="QString" value="collection" name="type"/>
+          <Option value="collection" name="type" type="QString"/>
         </Option>
       </dd_properties>
       <callout type="simple">
         <Option type="Map">
-          <Option type="QString" value="pole_of_inaccessibility" name="anchorPoint"/>
-          <Option type="Map" name="ddProperties">
-            <Option type="QString" value="" name="name"/>
+          <Option value="pole_of_inaccessibility" name="anchorPoint" type="QString"/>
+          <Option name="ddProperties" type="Map">
+            <Option value="" name="name" type="QString"/>
             <Option name="properties"/>
-            <Option type="QString" value="collection" name="type"/>
+            <Option value="collection" name="type" type="QString"/>
           </Option>
-          <Option type="bool" value="false" name="drawToAllParts"/>
-          <Option type="QString" value="0" name="enabled"/>
-          <Option type="QString" value="&lt;symbol clip_to_extent=&quot;1&quot; alpha=&quot;1&quot; force_rhr=&quot;0&quot; type=&quot;line&quot; name=&quot;symbol&quot;>&lt;layer class=&quot;SimpleLine&quot; locked=&quot;0&quot; enabled=&quot;1&quot; pass=&quot;0&quot;>&lt;prop v=&quot;square&quot; k=&quot;capstyle&quot;/>&lt;prop v=&quot;5;2&quot; k=&quot;customdash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;customdash_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;customdash_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;draw_inside_polygon&quot;/>&lt;prop v=&quot;bevel&quot; k=&quot;joinstyle&quot;/>&lt;prop v=&quot;60,60,60,255&quot; k=&quot;line_color&quot;/>&lt;prop v=&quot;solid&quot; k=&quot;line_style&quot;/>&lt;prop v=&quot;0.3&quot; k=&quot;line_width&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;line_width_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;offset&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;offset_map_unit_scale&quot;/>&lt;prop v=&quot;MM&quot; k=&quot;offset_unit&quot;/>&lt;prop v=&quot;0&quot; k=&quot;ring_filter&quot;/>&lt;prop v=&quot;0&quot; k=&quot;use_custom_dash&quot;/>&lt;prop v=&quot;3x:0,0,0,0,0,0&quot; k=&quot;width_map_unit_scale&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option type=&quot;QString&quot; value=&quot;&quot; name=&quot;name&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option type=&quot;QString&quot; value=&quot;collection&quot; name=&quot;type&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol"/>
-          <Option type="double" value="0" name="minLength"/>
-          <Option type="QString" value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale"/>
-          <Option type="QString" value="MM" name="minLengthUnit"/>
-          <Option type="double" value="0" name="offsetFromAnchor"/>
-          <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale"/>
-          <Option type="QString" value="MM" name="offsetFromAnchorUnit"/>
-          <Option type="double" value="0" name="offsetFromLabel"/>
-          <Option type="QString" value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale"/>
-          <Option type="QString" value="MM" name="offsetFromLabelUnit"/>
+          <Option value="false" name="drawToAllParts" type="bool"/>
+          <Option value="0" name="enabled" type="QString"/>
+          <Option value="&lt;symbol clip_to_extent=&quot;1&quot; name=&quot;symbol&quot; type=&quot;line&quot; alpha=&quot;1&quot; force_rhr=&quot;0&quot;>&lt;layer class=&quot;SimpleLine&quot; enabled=&quot;1&quot; locked=&quot;0&quot; pass=&quot;0&quot;>&lt;prop k=&quot;capstyle&quot; v=&quot;square&quot;/>&lt;prop k=&quot;customdash&quot; v=&quot;5;2&quot;/>&lt;prop k=&quot;customdash_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;customdash_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;draw_inside_polygon&quot; v=&quot;0&quot;/>&lt;prop k=&quot;joinstyle&quot; v=&quot;bevel&quot;/>&lt;prop k=&quot;line_color&quot; v=&quot;60,60,60,255&quot;/>&lt;prop k=&quot;line_style&quot; v=&quot;solid&quot;/>&lt;prop k=&quot;line_width&quot; v=&quot;0.3&quot;/>&lt;prop k=&quot;line_width_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;offset&quot; v=&quot;0&quot;/>&lt;prop k=&quot;offset_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;prop k=&quot;offset_unit&quot; v=&quot;MM&quot;/>&lt;prop k=&quot;ring_filter&quot; v=&quot;0&quot;/>&lt;prop k=&quot;use_custom_dash&quot; v=&quot;0&quot;/>&lt;prop k=&quot;width_map_unit_scale&quot; v=&quot;3x:0,0,0,0,0,0&quot;/>&lt;data_defined_properties>&lt;Option type=&quot;Map&quot;>&lt;Option value=&quot;&quot; name=&quot;name&quot; type=&quot;QString&quot;/>&lt;Option name=&quot;properties&quot;/>&lt;Option value=&quot;collection&quot; name=&quot;type&quot; type=&quot;QString&quot;/>&lt;/Option>&lt;/data_defined_properties>&lt;/layer>&lt;/symbol>" name="lineSymbol" type="QString"/>
+          <Option value="0" name="minLength" type="double"/>
+          <Option value="3x:0,0,0,0,0,0" name="minLengthMapUnitScale" type="QString"/>
+          <Option value="MM" name="minLengthUnit" type="QString"/>
+          <Option value="0" name="offsetFromAnchor" type="double"/>
+          <Option value="3x:0,0,0,0,0,0" name="offsetFromAnchorMapUnitScale" type="QString"/>
+          <Option value="MM" name="offsetFromAnchorUnit" type="QString"/>
+          <Option value="0" name="offsetFromLabel" type="double"/>
+          <Option value="3x:0,0,0,0,0,0" name="offsetFromLabelMapUnitScale" type="QString"/>
+          <Option value="MM" name="offsetFromLabelUnit" type="QString"/>
         </Option>
       </callout>
     </settings>
   </labeling>
   <customproperties>
-    <property key="dualview/previewExpressions">
-      <value>gml_id</value>
-    </property>
+    <property value="gml_id" key="dualview/previewExpressions"/>
     <property value="0" key="embeddedWidgets/count"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
@@ -98,33 +96,33 @@
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Histogram" attributeLegend="1">
-    <DiagramCategory width="15" lineSizeType="MM" opacity="1" backgroundColor="#ffffff" rotationOffset="270" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" maxScaleDenominator="1e+08" scaleBasedVisibility="0" backgroundAlpha="255" height="15" minScaleDenominator="0" minimumSize="0" penAlpha="255" sizeType="MM" direction="0" labelPlacementMethod="XHeight" barWidth="5" spacing="5" spacingUnitScale="3x:0,0,0,0,0,0" showAxis="1" penColor="#000000" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" enabled="0" penWidth="0" spacingUnit="MM">
+    <DiagramCategory spacingUnit="MM" rotationOffset="270" height="15" backgroundColor="#ffffff" scaleBasedVisibility="0" lineSizeType="MM" scaleDependency="Area" opacity="1" showAxis="1" enabled="0" spacingUnitScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" backgroundAlpha="255" penColor="#000000" spacing="5" diagramOrientation="Up" barWidth="5" maxScaleDenominator="1e+08" width="15" penAlpha="255" sizeScale="3x:0,0,0,0,0,0" minScaleDenominator="0" minimumSize="0" penWidth="0" direction="0" sizeType="MM" lineSizeScale="3x:0,0,0,0,0,0">
       <fontProperties description="MS Shell Dlg 2,7.8,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute field="" label="" color="#000000"/>
+      <attribute label="" field="" color="#000000"/>
       <axisSymbol>
-        <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="line" name="">
-          <layer class="SimpleLine" locked="0" enabled="1" pass="0">
-            <prop v="square" k="capstyle"/>
-            <prop v="5;2" k="customdash"/>
-            <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
-            <prop v="MM" k="customdash_unit"/>
-            <prop v="0" k="draw_inside_polygon"/>
-            <prop v="bevel" k="joinstyle"/>
-            <prop v="35,35,35,255" k="line_color"/>
-            <prop v="solid" k="line_style"/>
-            <prop v="0.26" k="line_width"/>
-            <prop v="MM" k="line_width_unit"/>
-            <prop v="0" k="offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-            <prop v="MM" k="offset_unit"/>
-            <prop v="0" k="ring_filter"/>
-            <prop v="0" k="use_custom_dash"/>
-            <prop v="3x:0,0,0,0,0,0" k="width_map_unit_scale"/>
+        <symbol clip_to_extent="1" name="" type="line" alpha="1" force_rhr="0">
+          <layer class="SimpleLine" enabled="1" locked="0" pass="0">
+            <prop k="capstyle" v="square"/>
+            <prop k="customdash" v="5;2"/>
+            <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="customdash_unit" v="MM"/>
+            <prop k="draw_inside_polygon" v="0"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="line_color" v="35,35,35,255"/>
+            <prop k="line_style" v="solid"/>
+            <prop k="line_width" v="0.26"/>
+            <prop k="line_width_unit" v="MM"/>
+            <prop k="offset" v="0"/>
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="ring_filter" v="0"/>
+            <prop k="use_custom_dash" v="0"/>
+            <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option type="QString" value="" name="name"/>
+                <Option value="" name="name" type="QString"/>
                 <Option name="properties"/>
-                <Option type="QString" value="collection" name="type"/>
+                <Option value="collection" name="type" type="QString"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -132,16 +130,16 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings linePlacementFlags="18" zIndex="0" priority="0" placement="2" obstacle="0" dist="0" showAll="1">
+  <DiagramLayerSettings obstacle="0" priority="0" zIndex="0" placement="2" showAll="1" linePlacementFlags="18" dist="0">
     <properties>
       <Option type="Map">
-        <Option type="QString" value="" name="name"/>
+        <Option value="" name="name" type="QString"/>
         <Option name="properties"/>
-        <Option type="QString" value="collection" name="type"/>
+        <Option value="collection" name="type" type="QString"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
+  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
     <activeChecks/>
     <checkConfiguration/>
   </geometryOptions>
@@ -253,6 +251,13 @@
         </config>
       </editWidget>
     </field>
+    <field name="koniecWersjiObiektu">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field name="x_dataUtworzenia">
       <editWidget type="TextEdit">
         <config>
@@ -341,8 +346,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="QString" value="0" name="IsMultiline"/>
-            <Option type="QString" value="0" name="UseHtml"/>
+            <Option value="0" name="IsMultiline" type="QString"/>
+            <Option value="0" name="UseHtml" type="QString"/>
           </Option>
         </config>
       </editWidget>
@@ -351,8 +356,8 @@
       <editWidget type="TextEdit">
         <config>
           <Option type="Map">
-            <Option type="QString" value="0" name="IsMultiline"/>
-            <Option type="QString" value="0" name="UseHtml"/>
+            <Option value="0" name="IsMultiline" type="QString"/>
+            <Option value="0" name="UseHtml" type="QString"/>
           </Option>
         </config>
       </editWidget>
@@ -465,79 +470,81 @@
     <alias field="x_aktualnoscG" index="12" name=""/>
     <alias field="x_aktualnoscA" index="13" name=""/>
     <alias field="poczatekWersjiObiektu" index="14" name=""/>
-    <alias field="x_dataUtworzenia" index="15" name=""/>
-    <alias field="x_kodKarto10k" index="16" name=""/>
-    <alias field="x_kodKarto25k" index="17" name=""/>
-    <alias field="x_kodKarto50k" index="18" name=""/>
-    <alias field="x_kodKarto100k" index="19" name=""/>
-    <alias field="x_kodKarto250k" index="20" name=""/>
-    <alias field="x_kodKarto500k" index="21" name=""/>
-    <alias field="x_kodKarto1000k" index="22" name=""/>
-    <alias field="katZarzadzania" index="23" name=""/>
-    <alias field="klasaDrogi" index="24" name=""/>
-    <alias field="materialNawierzchni" index="25" name=""/>
-    <alias field="liczbaJezdniDrogi" index="26" name=""/>
-    <alias field="polozenie" index="27" name=""/>
-    <alias field="szerNawierzchni" index="28" name=""/>
-    <alias field="szerKoronyDrogi" index="29" name=""/>
-    <alias field="liczbaPasow" index="30" name=""/>
-    <alias field="ulica" index="31" name=""/>
-    <alias field="szerNawierzchni_uom" index="32" name=""/>
-    <alias field="szerKoronyDrogi_uom" index="33" name=""/>
-    <alias field="numer" index="34" name=""/>
-    <alias field="x_uwagi" index="35" name=""/>
-    <alias field="x_informDodatkowa" index="36" name=""/>
-    <alias field="ulica3" index="37" name=""/>
-    <alias field="skdr_l1" index="38" name=""/>
-    <alias field="KOD10K" index="39" name=""/>
-    <alias field="KATZARZ" index="40" name=""/>
-    <alias field="SZL_NUMER" index="41" name=""/>
+    <alias field="koniecWersjiObiektu" index="15" name=""/>
+    <alias field="x_dataUtworzenia" index="16" name=""/>
+    <alias field="x_kodKarto10k" index="17" name=""/>
+    <alias field="x_kodKarto25k" index="18" name=""/>
+    <alias field="x_kodKarto50k" index="19" name=""/>
+    <alias field="x_kodKarto100k" index="20" name=""/>
+    <alias field="x_kodKarto250k" index="21" name=""/>
+    <alias field="x_kodKarto500k" index="22" name=""/>
+    <alias field="x_kodKarto1000k" index="23" name=""/>
+    <alias field="katZarzadzania" index="24" name=""/>
+    <alias field="klasaDrogi" index="25" name=""/>
+    <alias field="materialNawierzchni" index="26" name=""/>
+    <alias field="liczbaJezdniDrogi" index="27" name=""/>
+    <alias field="polozenie" index="28" name=""/>
+    <alias field="szerNawierzchni" index="29" name=""/>
+    <alias field="szerKoronyDrogi" index="30" name=""/>
+    <alias field="liczbaPasow" index="31" name=""/>
+    <alias field="ulica" index="32" name=""/>
+    <alias field="szerNawierzchni_uom" index="33" name=""/>
+    <alias field="szerKoronyDrogi_uom" index="34" name=""/>
+    <alias field="numer" index="35" name=""/>
+    <alias field="x_uwagi" index="36" name=""/>
+    <alias field="x_informDodatkowa" index="37" name=""/>
+    <alias field="ulica3" index="38" name=""/>
+    <alias field="skdr_l1" index="39" name=""/>
+    <alias field="KOD10K" index="40" name=""/>
+    <alias field="KATZARZ" index="41" name=""/>
+    <alias field="SZL_NUMER" index="42" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default expression="" field="gml_id" applyOnUpdate="0"/>
-    <default expression="" field="lokalnyId" applyOnUpdate="0"/>
-    <default expression="" field="przestrzenNazw" applyOnUpdate="0"/>
-    <default expression="" field="wersjaId" applyOnUpdate="0"/>
-    <default expression="" field="czyObiektBDOO" applyOnUpdate="0"/>
-    <default expression="" field="x_kod" applyOnUpdate="0"/>
-    <default expression="" field="x_skrKarto" applyOnUpdate="0"/>
-    <default expression="" field="x_katDoklGeom" applyOnUpdate="0"/>
-    <default expression="" field="x_zrodloDanychG" applyOnUpdate="0"/>
-    <default expression="" field="x_zrodloDanychA" applyOnUpdate="0"/>
-    <default expression="" field="x_katIstnienia" applyOnUpdate="0"/>
-    <default expression="" field="x_rodzajReprGeom" applyOnUpdate="0"/>
-    <default expression="" field="x_aktualnoscG" applyOnUpdate="0"/>
-    <default expression="" field="x_aktualnoscA" applyOnUpdate="0"/>
-    <default expression="" field="poczatekWersjiObiektu" applyOnUpdate="0"/>
-    <default expression="" field="x_dataUtworzenia" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto10k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto25k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto50k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto100k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto250k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto500k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto1000k" applyOnUpdate="0"/>
-    <default expression="" field="katZarzadzania" applyOnUpdate="0"/>
-    <default expression="" field="klasaDrogi" applyOnUpdate="0"/>
-    <default expression="" field="materialNawierzchni" applyOnUpdate="0"/>
-    <default expression="" field="liczbaJezdniDrogi" applyOnUpdate="0"/>
-    <default expression="" field="polozenie" applyOnUpdate="0"/>
-    <default expression="" field="szerNawierzchni" applyOnUpdate="0"/>
-    <default expression="" field="szerKoronyDrogi" applyOnUpdate="0"/>
-    <default expression="" field="liczbaPasow" applyOnUpdate="0"/>
-    <default expression="" field="ulica" applyOnUpdate="0"/>
-    <default expression="" field="szerNawierzchni_uom" applyOnUpdate="0"/>
-    <default expression="" field="szerKoronyDrogi_uom" applyOnUpdate="0"/>
-    <default expression="" field="numer" applyOnUpdate="0"/>
-    <default expression="" field="x_uwagi" applyOnUpdate="0"/>
-    <default expression="" field="x_informDodatkowa" applyOnUpdate="0"/>
-    <default expression="" field="ulica3" applyOnUpdate="0"/>
-    <default expression="" field="skdr_l1" applyOnUpdate="0"/>
-    <default expression="" field="KOD10K" applyOnUpdate="0"/>
-    <default expression="" field="KATZARZ" applyOnUpdate="0"/>
-    <default expression="" field="SZL_NUMER" applyOnUpdate="0"/>
+    <default applyOnUpdate="0" field="gml_id" expression=""/>
+    <default applyOnUpdate="0" field="lokalnyId" expression=""/>
+    <default applyOnUpdate="0" field="przestrzenNazw" expression=""/>
+    <default applyOnUpdate="0" field="wersjaId" expression=""/>
+    <default applyOnUpdate="0" field="czyObiektBDOO" expression=""/>
+    <default applyOnUpdate="0" field="x_kod" expression=""/>
+    <default applyOnUpdate="0" field="x_skrKarto" expression=""/>
+    <default applyOnUpdate="0" field="x_katDoklGeom" expression=""/>
+    <default applyOnUpdate="0" field="x_zrodloDanychG" expression=""/>
+    <default applyOnUpdate="0" field="x_zrodloDanychA" expression=""/>
+    <default applyOnUpdate="0" field="x_katIstnienia" expression=""/>
+    <default applyOnUpdate="0" field="x_rodzajReprGeom" expression=""/>
+    <default applyOnUpdate="0" field="x_aktualnoscG" expression=""/>
+    <default applyOnUpdate="0" field="x_aktualnoscA" expression=""/>
+    <default applyOnUpdate="0" field="poczatekWersjiObiektu" expression=""/>
+    <default applyOnUpdate="0" field="koniecWersjiObiektu" expression=""/>
+    <default applyOnUpdate="0" field="x_dataUtworzenia" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto10k" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto25k" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto50k" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto100k" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto250k" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto500k" expression=""/>
+    <default applyOnUpdate="0" field="x_kodKarto1000k" expression=""/>
+    <default applyOnUpdate="0" field="katZarzadzania" expression=""/>
+    <default applyOnUpdate="0" field="klasaDrogi" expression=""/>
+    <default applyOnUpdate="0" field="materialNawierzchni" expression=""/>
+    <default applyOnUpdate="0" field="liczbaJezdniDrogi" expression=""/>
+    <default applyOnUpdate="0" field="polozenie" expression=""/>
+    <default applyOnUpdate="0" field="szerNawierzchni" expression=""/>
+    <default applyOnUpdate="0" field="szerKoronyDrogi" expression=""/>
+    <default applyOnUpdate="0" field="liczbaPasow" expression=""/>
+    <default applyOnUpdate="0" field="ulica" expression=""/>
+    <default applyOnUpdate="0" field="szerNawierzchni_uom" expression=""/>
+    <default applyOnUpdate="0" field="szerKoronyDrogi_uom" expression=""/>
+    <default applyOnUpdate="0" field="numer" expression=""/>
+    <default applyOnUpdate="0" field="x_uwagi" expression=""/>
+    <default applyOnUpdate="0" field="x_informDodatkowa" expression=""/>
+    <default applyOnUpdate="0" field="ulica3" expression=""/>
+    <default applyOnUpdate="0" field="skdr_l1" expression=""/>
+    <default applyOnUpdate="0" field="KOD10K" expression=""/>
+    <default applyOnUpdate="0" field="KATZARZ" expression=""/>
+    <default applyOnUpdate="0" field="SZL_NUMER" expression=""/>
   </defaults>
   <constraints>
     <constraint constraints="1" unique_strength="0" field="gml_id" notnull_strength="1" exp_strength="0"/>
@@ -555,6 +562,7 @@
     <constraint constraints="0" unique_strength="0" field="x_aktualnoscG" notnull_strength="0" exp_strength="0"/>
     <constraint constraints="0" unique_strength="0" field="x_aktualnoscA" notnull_strength="0" exp_strength="0"/>
     <constraint constraints="0" unique_strength="0" field="poczatekWersjiObiektu" notnull_strength="0" exp_strength="0"/>
+    <constraint constraints="0" unique_strength="0" field="koniecWersjiObiektu" notnull_strength="0" exp_strength="0"/>
     <constraint constraints="0" unique_strength="0" field="x_dataUtworzenia" notnull_strength="0" exp_strength="0"/>
     <constraint constraints="0" unique_strength="0" field="x_kodKarto10k" notnull_strength="0" exp_strength="0"/>
     <constraint constraints="0" unique_strength="0" field="x_kodKarto25k" notnull_strength="0" exp_strength="0"/>
@@ -599,6 +607,7 @@
     <constraint exp="" field="x_aktualnoscG" desc=""/>
     <constraint exp="" field="x_aktualnoscA" desc=""/>
     <constraint exp="" field="poczatekWersjiObiektu" desc=""/>
+    <constraint exp="" field="koniecWersjiObiektu" desc=""/>
     <constraint exp="" field="x_dataUtworzenia" desc=""/>
     <constraint exp="" field="x_kodKarto10k" desc=""/>
     <constraint exp="" field="x_kodKarto25k" desc=""/>
@@ -628,58 +637,59 @@
     <constraint exp="" field="SZL_NUMER" desc=""/>
   </constraintExpressions>
   <expressionfields>
-    <field typeName="string" precision="0" expression=" &quot;x_kodKarto10k&quot; " subType="0" length="0" type="10" name="KOD10K" comment=""/>
-    <field typeName="string" precision="0" expression=" &quot;katZarzadzania&quot; " subType="0" length="0" type="10" name="KATZARZ" comment=""/>
-    <field typeName="string" precision="0" expression="&#xd;&#xa;if(&quot;numer&quot;[1]!='',&quot;numer&quot;[0]+'|'+&quot;numer&quot;[1],&quot;numer&quot;)" subType="0" length="0" type="10" name="SZL_NUMER" comment=""/>
+    <field length="0" subType="0" precision="0" comment="" name="KOD10K" type="10" typeName="string" expression=" &quot;x_kodKarto10k&quot; "/>
+    <field length="0" subType="0" precision="0" comment="" name="KATZARZ" type="10" typeName="string" expression=" &quot;katZarzadzania&quot; "/>
+    <field length="0" subType="0" precision="0" comment="" name="SZL_NUMER" type="10" typeName="string" expression="&#xd;&#xa;if(&quot;numer&quot;[1]!='',&quot;numer&quot;[0]+'|'+&quot;numer&quot;[1],&quot;numer&quot;)"/>
   </expressionfields>
   <attributeactions>
     <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
   </attributeactions>
-  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;SZL_NUMER&quot;" sortOrder="0">
+  <attributetableconfig sortOrder="0" sortExpression="&quot;SZL_NUMER&quot;" actionWidgetStyle="dropDown">
     <columns>
-      <column hidden="0" width="-1" type="field" name="gml_id"/>
-      <column hidden="0" width="-1" type="field" name="lokalnyId"/>
-      <column hidden="0" width="-1" type="field" name="przestrzenNazw"/>
-      <column hidden="0" width="-1" type="field" name="wersjaId"/>
-      <column hidden="0" width="-1" type="field" name="czyObiektBDOO"/>
-      <column hidden="0" width="-1" type="field" name="x_kod"/>
-      <column hidden="0" width="-1" type="field" name="x_skrKarto"/>
-      <column hidden="0" width="-1" type="field" name="x_katDoklGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_zrodloDanychG"/>
-      <column hidden="0" width="-1" type="field" name="x_zrodloDanychA"/>
-      <column hidden="0" width="-1" type="field" name="x_katIstnienia"/>
-      <column hidden="0" width="-1" type="field" name="x_rodzajReprGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_aktualnoscG"/>
-      <column hidden="0" width="-1" type="field" name="x_aktualnoscA"/>
-      <column hidden="0" width="-1" type="field" name="poczatekWersjiObiektu"/>
-      <column hidden="0" width="-1" type="field" name="x_dataUtworzenia"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto10k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto25k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto50k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto100k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto250k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto500k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto1000k"/>
-      <column hidden="0" width="-1" type="field" name="katZarzadzania"/>
-      <column hidden="0" width="-1" type="field" name="klasaDrogi"/>
-      <column hidden="0" width="-1" type="field" name="materialNawierzchni"/>
-      <column hidden="0" width="-1" type="field" name="liczbaJezdniDrogi"/>
-      <column hidden="0" width="-1" type="field" name="numer"/>
-      <column hidden="0" width="-1" type="field" name="x_informDodatkowa"/>
-      <column hidden="1" width="-1" type="actions"/>
-      <column hidden="0" width="-1" type="field" name="x_uwagi"/>
-      <column hidden="0" width="-1" type="field" name="polozenie"/>
-      <column hidden="0" width="-1" type="field" name="szerNawierzchni"/>
-      <column hidden="0" width="-1" type="field" name="szerKoronyDrogi"/>
-      <column hidden="0" width="-1" type="field" name="liczbaPasow"/>
-      <column hidden="0" width="-1" type="field" name="ulica"/>
-      <column hidden="0" width="-1" type="field" name="szerNawierzchni_uom"/>
-      <column hidden="0" width="-1" type="field" name="szerKoronyDrogi_uom"/>
-      <column hidden="0" width="-1" type="field" name="ulica3"/>
-      <column hidden="0" width="-1" type="field" name="skdr_l1"/>
-      <column hidden="1" width="-1" type="field" name="KOD10K"/>
-      <column hidden="1" width="-1" type="field" name="KATZARZ"/>
-      <column hidden="1" width="-1" type="field" name="SZL_NUMER"/>
+      <column width="-1" name="gml_id" type="field" hidden="0"/>
+      <column width="-1" name="lokalnyId" type="field" hidden="0"/>
+      <column width="-1" name="przestrzenNazw" type="field" hidden="0"/>
+      <column width="-1" name="wersjaId" type="field" hidden="0"/>
+      <column width="-1" name="czyObiektBDOO" type="field" hidden="0"/>
+      <column width="-1" name="x_kod" type="field" hidden="0"/>
+      <column width="-1" name="x_skrKarto" type="field" hidden="0"/>
+      <column width="-1" name="x_katDoklGeom" type="field" hidden="0"/>
+      <column width="-1" name="x_zrodloDanychG" type="field" hidden="0"/>
+      <column width="-1" name="x_zrodloDanychA" type="field" hidden="0"/>
+      <column width="-1" name="x_katIstnienia" type="field" hidden="0"/>
+      <column width="-1" name="x_rodzajReprGeom" type="field" hidden="0"/>
+      <column width="-1" name="x_aktualnoscG" type="field" hidden="0"/>
+      <column width="-1" name="x_aktualnoscA" type="field" hidden="0"/>
+      <column width="-1" name="poczatekWersjiObiektu" type="field" hidden="0"/>
+      <column width="-1" name="x_dataUtworzenia" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto10k" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto25k" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto50k" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto100k" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto250k" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto500k" type="field" hidden="0"/>
+      <column width="-1" name="x_kodKarto1000k" type="field" hidden="0"/>
+      <column width="-1" name="katZarzadzania" type="field" hidden="0"/>
+      <column width="-1" name="klasaDrogi" type="field" hidden="0"/>
+      <column width="-1" name="materialNawierzchni" type="field" hidden="0"/>
+      <column width="-1" name="liczbaJezdniDrogi" type="field" hidden="0"/>
+      <column width="-1" name="numer" type="field" hidden="0"/>
+      <column width="-1" name="x_informDodatkowa" type="field" hidden="0"/>
+      <column width="-1" type="actions" hidden="1"/>
+      <column width="-1" name="x_uwagi" type="field" hidden="0"/>
+      <column width="-1" name="polozenie" type="field" hidden="0"/>
+      <column width="-1" name="szerNawierzchni" type="field" hidden="0"/>
+      <column width="-1" name="szerKoronyDrogi" type="field" hidden="0"/>
+      <column width="-1" name="liczbaPasow" type="field" hidden="0"/>
+      <column width="-1" name="ulica" type="field" hidden="0"/>
+      <column width="-1" name="szerNawierzchni_uom" type="field" hidden="0"/>
+      <column width="-1" name="szerKoronyDrogi_uom" type="field" hidden="0"/>
+      <column width="-1" name="ulica3" type="field" hidden="0"/>
+      <column width="-1" name="skdr_l1" type="field" hidden="0"/>
+      <column width="-1" name="KOD10K" type="field" hidden="1"/>
+      <column width="-1" name="KATZARZ" type="field" hidden="1"/>
+      <column width="-1" name="SZL_NUMER" type="field" hidden="1"/>
+      <column width="-1" name="koniecWersjiObiektu" type="field" hidden="0"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>

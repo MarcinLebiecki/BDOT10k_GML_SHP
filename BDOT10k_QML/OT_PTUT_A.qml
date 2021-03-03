@@ -1,23 +1,23 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis maxScale="1000" simplifyAlgorithm="0" labelsEnabled="0" readOnly="1" hasScaleBasedVisibilityFlag="1" simplifyMaxScale="1" simplifyLocal="1" minScale="10001" version="3.12.1-București" styleCategories="AllStyleCategories" simplifyDrawingTol="1" simplifyDrawingHints="1">
+<qgis version="3.12.1-București" simplifyMaxScale="1" readOnly="1" simplifyDrawingHints="1" styleCategories="AllStyleCategories" minScale="10001" simplifyAlgorithm="0" simplifyDrawingTol="1" labelsEnabled="0" simplifyLocal="1" maxScale="1000" hasScaleBasedVisibilityFlag="1">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 attr="KOD10K" enableorderby="0" forceraster="0" type="categorizedSymbol" symbollevels="0">
+  <renderer-v2 forceraster="0" attr="KOD10K" enableorderby="0" type="categorizedSymbol" symbollevels="0">
     <categories>
-      <category symbol="0" value="0010_708" label="zagajnik liściasty" render="true"/>
-      <category symbol="1" value="0010_709" label="zagajnik iglasty" render="true"/>
-      <category symbol="2" value="0010_710" label="zagajnik mieszany" render="true"/>
-      <category symbol="3" value="0010_718" label="ogród działkowy" render="true"/>
-      <category symbol="4" value="0010_719" label="sad" render="true"/>
-      <category symbol="5" value="0010_720" label="plantacja krzewów owocowych lub roślin ozdobnych" render="true"/>
-      <category symbol="6" value="0010_721" label="plantacja roślin przemysłowych" render="true"/>
+      <category render="true" symbol="0" label="zagajnik liściasty" value="0010_708"/>
+      <category render="true" symbol="1" label="zagajnik iglasty" value="0010_709"/>
+      <category render="true" symbol="2" label="zagajnik mieszany" value="0010_710"/>
+      <category render="true" symbol="3" label="ogród działkowy" value="0010_718"/>
+      <category render="true" symbol="4" label="sad" value="0010_719"/>
+      <category render="true" symbol="5" label="plantacja krzewów owocowych lub roślin ozdobnych" value="0010_720"/>
+      <category render="true" symbol="6" label="plantacja roślin przemysłowych" value="0010_721"/>
     </categories>
     <symbols>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="0" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="0" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="226,239,222,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -31,13 +31,13 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="50"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -60,13 +60,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@0@1" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@0@1" type="marker">
+            <layer enabled="1" class="SvgMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="fixedAspectRatio" v="0"/>
@@ -86,17 +86,17 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="1" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="1" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="226,239,222,255"/>
           <prop k="joinstyle" v="round"/>
@@ -110,13 +110,13 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="50"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -139,13 +139,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@1@1" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@1@1" type="marker">
+            <layer enabled="1" class="SvgMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="fixedAspectRatio" v="0"/>
@@ -165,17 +165,17 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="2" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="2" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="216,233,209,255"/>
           <prop k="joinstyle" v="round"/>
@@ -189,13 +189,13 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="100"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -218,13 +218,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@2@1" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@2@1" type="marker">
+            <layer enabled="1" class="SvgMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="fixedAspectRatio" v="0"/>
@@ -244,15 +244,15 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="50"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -275,13 +275,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@2@2" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@2@2" type="marker">
+            <layer enabled="1" class="SvgMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="fixedAspectRatio" v="0"/>
@@ -301,17 +301,17 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="3" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="3" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="238,240,185,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -325,15 +325,15 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="4" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="4" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="237,242,206,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -347,13 +347,13 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="3"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -376,13 +376,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@4@1" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@4@1" type="marker">
+            <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="92,155,75,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -403,17 +403,17 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="5" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="5" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="237,242,209,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -427,13 +427,13 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="0"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -456,13 +456,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@5@1" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@5@1" type="marker">
+            <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="92,155,75,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -483,15 +483,15 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="0"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -514,13 +514,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@5@2" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@5@2" type="marker">
+            <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="92,155,75,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -541,17 +541,17 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="6" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="6" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="237,242,206,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -565,13 +565,13 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="0"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -594,13 +594,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@6@1" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@6@1" type="marker">
+            <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="92,155,75,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -621,15 +621,15 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
           </symbol>
         </layer>
-        <layer locked="0" enabled="1" pass="0" class="PointPatternFill">
+        <layer enabled="1" class="PointPatternFill" locked="0" pass="0">
           <prop k="displacement_x" v="0"/>
           <prop k="displacement_x_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="displacement_x_unit" v="MapUnit"/>
@@ -652,13 +652,13 @@
           <prop k="outline_width_unit" v="MapUnit"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" force_rhr="0" type="marker" name="@6@2" alpha="1">
-            <layer locked="0" enabled="1" pass="0" class="SimpleMarker">
+          <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="@6@2" type="marker">
+            <layer enabled="1" class="SimpleMarker" locked="0" pass="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="92,155,75,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
@@ -679,9 +679,9 @@
               <prop k="vertical_anchor_point" v="1"/>
               <data_defined_properties>
                 <Option type="Map">
-                  <Option value="" type="QString" name="name"/>
+                  <Option name="name" type="QString" value=""/>
                   <Option name="properties"/>
-                  <Option value="collection" type="QString" name="type"/>
+                  <Option name="type" type="QString" value="collection"/>
                 </Option>
               </data_defined_properties>
             </layer>
@@ -690,8 +690,8 @@
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol clip_to_extent="1" force_rhr="0" type="fill" name="0" alpha="1">
-        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
+      <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="0" type="fill">
+        <layer enabled="1" class="SimpleFill" locked="0" pass="0">
           <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
           <prop k="color" v="39,151,127,255"/>
           <prop k="joinstyle" v="bevel"/>
@@ -705,9 +705,9 @@
           <prop k="style" v="solid"/>
           <data_defined_properties>
             <Option type="Map">
-              <Option value="" type="QString" name="name"/>
+              <Option name="name" type="QString" value=""/>
               <Option name="properties"/>
-              <Option value="collection" type="QString" name="type"/>
+              <Option name="type" type="QString" value="collection"/>
             </Option>
           </data_defined_properties>
         </layer>
@@ -717,23 +717,21 @@
     <sizescale/>
   </renderer-v2>
   <customproperties>
-    <property key="dualview/previewExpressions">
-      <value>COALESCE( "SYS_ID", '&lt;NULL>' )</value>
-    </property>
+    <property key="dualview/previewExpressions" value="COALESCE( &quot;SYS_ID&quot;, '&lt;NULL>' )"/>
     <property key="embeddedWidgets/count" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
-  <layerOpacity>1</layerOpacity>
+  <layerOpacity>0.65</layerOpacity>
   <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
-    <DiagramCategory penColor="#000000" minimumSize="0" penWidth="0" backgroundAlpha="255" barWidth="5" sizeScale="3x:0,0,0,0,0,0" lineSizeScale="3x:0,0,0,0,0,0" spacingUnit="MM" spacingUnitScale="3x:0,0,0,0,0,0" scaleBasedVisibility="0" height="15" opacity="1" labelPlacementMethod="XHeight" penAlpha="255" rotationOffset="270" lineSizeType="MM" sizeType="MM" diagramOrientation="Up" width="15" backgroundColor="#ffffff" minScaleDenominator="1" maxScaleDenominator="1e+08" spacing="0" showAxis="0" direction="1" enabled="0" scaleDependency="Area">
+    <DiagramCategory enabled="0" backgroundColor="#ffffff" height="15" penColor="#000000" spacing="0" direction="1" barWidth="5" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" scaleDependency="Area" minScaleDenominator="1" sizeScale="3x:0,0,0,0,0,0" minimumSize="0" opacity="1" sizeType="MM" spacingUnit="MM" width="15" backgroundAlpha="255" diagramOrientation="Up" penAlpha="255" maxScaleDenominator="1e+08" rotationOffset="270" showAxis="0" scaleBasedVisibility="0" spacingUnitScale="3x:0,0,0,0,0,0" penWidth="0">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
       <attribute label="" color="#000000" field=""/>
       <axisSymbol>
-        <symbol clip_to_extent="1" force_rhr="0" type="line" name="" alpha="1">
-          <layer locked="0" enabled="1" pass="0" class="SimpleLine">
+        <symbol alpha="1" force_rhr="0" clip_to_extent="1" name="" type="line">
+          <layer enabled="1" class="SimpleLine" locked="0" pass="0">
             <prop k="capstyle" v="square"/>
             <prop k="customdash" v="5;2"/>
             <prop k="customdash_map_unit_scale" v="3x:0,0,0,0,0,0"/>
@@ -752,9 +750,9 @@
             <prop k="width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
             <data_defined_properties>
               <Option type="Map">
-                <Option value="" type="QString" name="name"/>
+                <Option name="name" type="QString" value=""/>
                 <Option name="properties"/>
-                <Option value="collection" type="QString" name="type"/>
+                <Option name="type" type="QString" value="collection"/>
               </Option>
             </data_defined_properties>
           </layer>
@@ -762,22 +760,22 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings placement="0" priority="0" linePlacementFlags="2" zIndex="0" obstacle="0" dist="0" showAll="1">
+  <DiagramLayerSettings dist="0" placement="0" priority="0" obstacle="0" linePlacementFlags="2" zIndex="0" showAll="1">
     <properties>
       <Option type="Map">
-        <Option value="" type="QString" name="name"/>
+        <Option name="name" type="QString" value=""/>
         <Option name="properties"/>
-        <Option value="collection" type="QString" name="type"/>
+        <Option name="type" type="QString" value="collection"/>
       </Option>
     </properties>
   </DiagramLayerSettings>
-  <geometryOptions geometryPrecision="0" removeDuplicateNodes="0">
+  <geometryOptions removeDuplicateNodes="0" geometryPrecision="0">
     <activeChecks/>
     <checkConfiguration type="Map">
-      <Option type="Map" name="QgsGeometryGapCheck">
-        <Option value="0" type="double" name="allowedGapsBuffer"/>
-        <Option value="false" type="bool" name="allowedGapsEnabled"/>
-        <Option value="" type="QString" name="allowedGapsLayer"/>
+      <Option name="QgsGeometryGapCheck" type="Map">
+        <Option name="allowedGapsBuffer" type="double" value="0"/>
+        <Option name="allowedGapsEnabled" type="bool" value="false"/>
+        <Option name="allowedGapsLayer" type="QString" value=""/>
       </Option>
     </checkConfiguration>
   </geometryOptions>
@@ -973,6 +971,13 @@
         </config>
       </editWidget>
     </field>
+    <field name="x_informDodatkowa">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field name="KOD10K">
       <editWidget type="TextEdit">
         <config>
@@ -982,96 +987,99 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="gml_id" index="0" name=""/>
-    <alias field="lokalnyId" index="1" name=""/>
-    <alias field="przestrzenNazw" index="2" name=""/>
-    <alias field="wersjaId" index="3" name=""/>
-    <alias field="czyObiektBDOO" index="4" name=""/>
-    <alias field="x_kod" index="5" name=""/>
-    <alias field="x_skrKarto" index="6" name=""/>
-    <alias field="x_katDoklGeom" index="7" name=""/>
-    <alias field="x_doklGeom" index="8" name=""/>
-    <alias field="x_doklGeom_uom" index="9" name=""/>
-    <alias field="x_zrodloDanychG" index="10" name=""/>
-    <alias field="x_zrodloDanychA" index="11" name=""/>
-    <alias field="x_katIstnienia" index="12" name=""/>
-    <alias field="x_rodzajReprGeom" index="13" name=""/>
-    <alias field="x_aktualnoscG" index="14" name=""/>
-    <alias field="x_aktualnoscA" index="15" name=""/>
-    <alias field="poczatekWersjiObiektu" index="16" name=""/>
-    <alias field="x_dataUtworzenia" index="17" name=""/>
-    <alias field="x_kodKarto10k" index="18" name=""/>
-    <alias field="x_kodKarto25k" index="19" name=""/>
-    <alias field="x_kodKarto50k" index="20" name=""/>
-    <alias field="x_kodKarto100k" index="21" name=""/>
-    <alias field="x_kodKarto250k" index="22" name=""/>
-    <alias field="x_kodKarto500k" index="23" name=""/>
-    <alias field="x_kodKarto1000k" index="24" name=""/>
-    <alias field="gatunek" index="25" name=""/>
-    <alias field="rodzaj" index="26" name=""/>
-    <alias field="KOD10K" index="27" name=""/>
+    <alias index="0" field="gml_id" name=""/>
+    <alias index="1" field="lokalnyId" name=""/>
+    <alias index="2" field="przestrzenNazw" name=""/>
+    <alias index="3" field="wersjaId" name=""/>
+    <alias index="4" field="czyObiektBDOO" name=""/>
+    <alias index="5" field="x_kod" name=""/>
+    <alias index="6" field="x_skrKarto" name=""/>
+    <alias index="7" field="x_katDoklGeom" name=""/>
+    <alias index="8" field="x_doklGeom" name=""/>
+    <alias index="9" field="x_doklGeom_uom" name=""/>
+    <alias index="10" field="x_zrodloDanychG" name=""/>
+    <alias index="11" field="x_zrodloDanychA" name=""/>
+    <alias index="12" field="x_katIstnienia" name=""/>
+    <alias index="13" field="x_rodzajReprGeom" name=""/>
+    <alias index="14" field="x_aktualnoscG" name=""/>
+    <alias index="15" field="x_aktualnoscA" name=""/>
+    <alias index="16" field="poczatekWersjiObiektu" name=""/>
+    <alias index="17" field="x_dataUtworzenia" name=""/>
+    <alias index="18" field="x_kodKarto10k" name=""/>
+    <alias index="19" field="x_kodKarto25k" name=""/>
+    <alias index="20" field="x_kodKarto50k" name=""/>
+    <alias index="21" field="x_kodKarto100k" name=""/>
+    <alias index="22" field="x_kodKarto250k" name=""/>
+    <alias index="23" field="x_kodKarto500k" name=""/>
+    <alias index="24" field="x_kodKarto1000k" name=""/>
+    <alias index="25" field="gatunek" name=""/>
+    <alias index="26" field="rodzaj" name=""/>
+    <alias index="27" field="x_informDodatkowa" name=""/>
+    <alias index="28" field="KOD10K" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default applyOnUpdate="0" field="gml_id" expression=""/>
-    <default applyOnUpdate="0" field="lokalnyId" expression=""/>
-    <default applyOnUpdate="0" field="przestrzenNazw" expression=""/>
-    <default applyOnUpdate="0" field="wersjaId" expression=""/>
-    <default applyOnUpdate="0" field="czyObiektBDOO" expression=""/>
-    <default applyOnUpdate="0" field="x_kod" expression=""/>
-    <default applyOnUpdate="0" field="x_skrKarto" expression=""/>
-    <default applyOnUpdate="0" field="x_katDoklGeom" expression=""/>
-    <default applyOnUpdate="0" field="x_doklGeom" expression=""/>
-    <default applyOnUpdate="0" field="x_doklGeom_uom" expression=""/>
-    <default applyOnUpdate="0" field="x_zrodloDanychG" expression=""/>
-    <default applyOnUpdate="0" field="x_zrodloDanychA" expression=""/>
-    <default applyOnUpdate="0" field="x_katIstnienia" expression=""/>
-    <default applyOnUpdate="0" field="x_rodzajReprGeom" expression=""/>
-    <default applyOnUpdate="0" field="x_aktualnoscG" expression=""/>
-    <default applyOnUpdate="0" field="x_aktualnoscA" expression=""/>
-    <default applyOnUpdate="0" field="poczatekWersjiObiektu" expression=""/>
-    <default applyOnUpdate="0" field="x_dataUtworzenia" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto10k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto25k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto50k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto100k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto250k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto500k" expression=""/>
-    <default applyOnUpdate="0" field="x_kodKarto1000k" expression=""/>
-    <default applyOnUpdate="0" field="gatunek" expression=""/>
-    <default applyOnUpdate="0" field="rodzaj" expression=""/>
-    <default applyOnUpdate="0" field="KOD10K" expression=""/>
+    <default expression="" applyOnUpdate="0" field="gml_id"/>
+    <default expression="" applyOnUpdate="0" field="lokalnyId"/>
+    <default expression="" applyOnUpdate="0" field="przestrzenNazw"/>
+    <default expression="" applyOnUpdate="0" field="wersjaId"/>
+    <default expression="" applyOnUpdate="0" field="czyObiektBDOO"/>
+    <default expression="" applyOnUpdate="0" field="x_kod"/>
+    <default expression="" applyOnUpdate="0" field="x_skrKarto"/>
+    <default expression="" applyOnUpdate="0" field="x_katDoklGeom"/>
+    <default expression="" applyOnUpdate="0" field="x_doklGeom"/>
+    <default expression="" applyOnUpdate="0" field="x_doklGeom_uom"/>
+    <default expression="" applyOnUpdate="0" field="x_zrodloDanychG"/>
+    <default expression="" applyOnUpdate="0" field="x_zrodloDanychA"/>
+    <default expression="" applyOnUpdate="0" field="x_katIstnienia"/>
+    <default expression="" applyOnUpdate="0" field="x_rodzajReprGeom"/>
+    <default expression="" applyOnUpdate="0" field="x_aktualnoscG"/>
+    <default expression="" applyOnUpdate="0" field="x_aktualnoscA"/>
+    <default expression="" applyOnUpdate="0" field="poczatekWersjiObiektu"/>
+    <default expression="" applyOnUpdate="0" field="x_dataUtworzenia"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto10k"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto25k"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto50k"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto100k"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto250k"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto500k"/>
+    <default expression="" applyOnUpdate="0" field="x_kodKarto1000k"/>
+    <default expression="" applyOnUpdate="0" field="gatunek"/>
+    <default expression="" applyOnUpdate="0" field="rodzaj"/>
+    <default expression="" applyOnUpdate="0" field="x_informDodatkowa"/>
+    <default expression="" applyOnUpdate="0" field="KOD10K"/>
   </defaults>
   <constraints>
-    <constraint exp_strength="0" field="gml_id" constraints="1" notnull_strength="1" unique_strength="0"/>
-    <constraint exp_strength="0" field="lokalnyId" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="przestrzenNazw" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="wersjaId" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="czyObiektBDOO" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kod" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_skrKarto" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_katDoklGeom" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_doklGeom" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_doklGeom_uom" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_zrodloDanychG" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_zrodloDanychA" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_katIstnienia" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_rodzajReprGeom" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_aktualnoscG" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_aktualnoscA" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="poczatekWersjiObiektu" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_dataUtworzenia" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto10k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto25k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto50k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto100k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto250k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto500k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="x_kodKarto1000k" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="gatunek" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="rodzaj" constraints="0" notnull_strength="0" unique_strength="0"/>
-    <constraint exp_strength="0" field="KOD10K" constraints="0" notnull_strength="0" unique_strength="0"/>
+    <constraint notnull_strength="1" unique_strength="0" exp_strength="0" constraints="1" field="gml_id"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="lokalnyId"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="przestrzenNazw"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="wersjaId"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="czyObiektBDOO"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kod"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_skrKarto"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_katDoklGeom"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_doklGeom"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_doklGeom_uom"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_zrodloDanychG"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_zrodloDanychA"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_katIstnienia"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_rodzajReprGeom"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_aktualnoscG"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_aktualnoscA"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="poczatekWersjiObiektu"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_dataUtworzenia"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto10k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto25k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto50k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto100k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto250k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto500k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_kodKarto1000k"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="gatunek"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="rodzaj"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="x_informDodatkowa"/>
+    <constraint notnull_strength="0" unique_strength="0" exp_strength="0" constraints="0" field="KOD10K"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" desc="" field="gml_id"/>
@@ -1101,45 +1109,47 @@
     <constraint exp="" desc="" field="x_kodKarto1000k"/>
     <constraint exp="" desc="" field="gatunek"/>
     <constraint exp="" desc="" field="rodzaj"/>
+    <constraint exp="" desc="" field="x_informDodatkowa"/>
     <constraint exp="" desc="" field="KOD10K"/>
   </constraintExpressions>
   <expressionfields>
-    <field comment="" precision="0" subType="0" length="0" expression=" &quot;x_kodKarto10k&quot; " type="10" typeName="string" name="KOD10K"/>
+    <field comment="" length="0" typeName="string" precision="0" expression=" &quot;x_kodKarto10k&quot; " subType="0" name="KOD10K" type="10"/>
   </expressionfields>
   <attributeactions>
     <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
-  <attributetableconfig sortOrder="0" sortExpression="&quot;KOD10K&quot;" actionWidgetStyle="dropDown">
+  <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;KOD10K&quot;" sortOrder="0">
     <columns>
-      <column type="field" width="-1" name="rodzaj" hidden="0"/>
-      <column type="actions" width="-1" hidden="1"/>
-      <column type="field" width="-1" name="gml_id" hidden="0"/>
-      <column type="field" width="-1" name="lokalnyId" hidden="0"/>
-      <column type="field" width="-1" name="przestrzenNazw" hidden="0"/>
-      <column type="field" width="-1" name="wersjaId" hidden="0"/>
-      <column type="field" width="-1" name="czyObiektBDOO" hidden="0"/>
-      <column type="field" width="-1" name="x_kod" hidden="0"/>
-      <column type="field" width="-1" name="x_skrKarto" hidden="0"/>
-      <column type="field" width="-1" name="x_katDoklGeom" hidden="0"/>
-      <column type="field" width="-1" name="x_zrodloDanychG" hidden="0"/>
-      <column type="field" width="-1" name="x_zrodloDanychA" hidden="0"/>
-      <column type="field" width="-1" name="x_katIstnienia" hidden="0"/>
-      <column type="field" width="-1" name="x_rodzajReprGeom" hidden="0"/>
-      <column type="field" width="-1" name="x_aktualnoscG" hidden="0"/>
-      <column type="field" width="-1" name="x_aktualnoscA" hidden="0"/>
-      <column type="field" width="-1" name="poczatekWersjiObiektu" hidden="0"/>
-      <column type="field" width="-1" name="x_dataUtworzenia" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto10k" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto25k" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto50k" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto100k" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto250k" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto500k" hidden="0"/>
-      <column type="field" width="-1" name="x_kodKarto1000k" hidden="0"/>
-      <column type="field" width="-1" name="gatunek" hidden="0"/>
-      <column type="field" width="-1" name="x_doklGeom" hidden="0"/>
-      <column type="field" width="-1" name="x_doklGeom_uom" hidden="0"/>
-      <column type="field" width="-1" name="KOD10K" hidden="1"/>
+      <column hidden="0" width="-1" name="rodzaj" type="field"/>
+      <column hidden="1" width="-1" type="actions"/>
+      <column hidden="0" width="-1" name="gml_id" type="field"/>
+      <column hidden="0" width="-1" name="lokalnyId" type="field"/>
+      <column hidden="0" width="-1" name="przestrzenNazw" type="field"/>
+      <column hidden="0" width="-1" name="wersjaId" type="field"/>
+      <column hidden="0" width="-1" name="czyObiektBDOO" type="field"/>
+      <column hidden="0" width="-1" name="x_kod" type="field"/>
+      <column hidden="0" width="-1" name="x_skrKarto" type="field"/>
+      <column hidden="0" width="-1" name="x_katDoklGeom" type="field"/>
+      <column hidden="0" width="-1" name="x_zrodloDanychG" type="field"/>
+      <column hidden="0" width="-1" name="x_zrodloDanychA" type="field"/>
+      <column hidden="0" width="-1" name="x_katIstnienia" type="field"/>
+      <column hidden="0" width="-1" name="x_rodzajReprGeom" type="field"/>
+      <column hidden="0" width="-1" name="x_aktualnoscG" type="field"/>
+      <column hidden="0" width="-1" name="x_aktualnoscA" type="field"/>
+      <column hidden="0" width="-1" name="poczatekWersjiObiektu" type="field"/>
+      <column hidden="0" width="-1" name="x_dataUtworzenia" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto10k" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto25k" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto50k" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto100k" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto250k" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto500k" type="field"/>
+      <column hidden="0" width="-1" name="x_kodKarto1000k" type="field"/>
+      <column hidden="0" width="-1" name="gatunek" type="field"/>
+      <column hidden="0" width="-1" name="x_doklGeom" type="field"/>
+      <column hidden="0" width="-1" name="x_doklGeom_uom" type="field"/>
+      <column hidden="1" width="-1" name="KOD10K" type="field"/>
+      <column hidden="0" width="-1" name="x_informDodatkowa" type="field"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>

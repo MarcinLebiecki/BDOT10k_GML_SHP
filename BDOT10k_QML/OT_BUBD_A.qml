@@ -1,34 +1,34 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis simplifyDrawingTol="1" hasScaleBasedVisibilityFlag="1" styleCategories="AllStyleCategories" minScale="10001" version="3.12.1-București" readOnly="1" maxScale="0" simplifyAlgorithm="0" simplifyMaxScale="1" labelsEnabled="0" simplifyDrawingHints="1" simplifyLocal="1">
+<qgis simplifyAlgorithm="0" version="3.12.1-București" simplifyDrawingTol="1" minScale="10001" simplifyMaxScale="1" labelsEnabled="0" simplifyLocal="1" hasScaleBasedVisibilityFlag="1" simplifyDrawingHints="1" readOnly="1" styleCategories="AllStyleCategories" maxScale="0">
   <flags>
     <Identifiable>1</Identifiable>
     <Removable>1</Removable>
     <Searchable>1</Searchable>
   </flags>
-  <renderer-v2 forceraster="0" enableorderby="0" symbollevels="0" type="categorizedSymbol" attr="KOD10K">
+  <renderer-v2 type="categorizedSymbol" symbollevels="1" attr="KOD10K" enableorderby="0" forceraster="0">
     <categories>
-      <category symbol="0" value="0010_329_2" label="kaplica (symbol)" render="true"/>
-      <category symbol="1" value="0010_630" label="latarnia morska" render="true"/>
-      <category symbol="2" value="0010_328_2" label="świątynia niechrześcijańska (symbol)" render="true"/>
-      <category symbol="3" value="0010_327_2" label="świątynia chrześcijańska: kościół lub cerkiew (symbol)" render="true"/>
-      <category symbol="4" value="0010_317_1" label="budynek mieszkalny wielorodzinny (w skali)" render="true"/>
-      <category symbol="5" value="0010_318_1" label="budynek mieszkalny jednorodzinny (w skali)" render="true"/>
-      <category symbol="6" value="0010_319" label="budynek mieszkalny wysoki" render="true"/>
-      <category symbol="7" value="0010_320_1" label="budynek użyteczności publicznej (w skali)" render="true"/>
-      <category symbol="8" value="0010_321" label="budynek użyteczności publicznej wysoki (w skali)" render="true"/>
-      <category symbol="9" value="0010_323_1" label="budynek przemysłowy (w skali)" render="true"/>
-      <category symbol="10" value="0010_324" label="budynek przemysłowy wysoki" render="true"/>
-      <category symbol="11" value="0010_325_1" label="budynek gospodarczy (w skali)" render="true"/>
-      <category symbol="12" value="0010_326_1" label="budynek zrujnowany lub ruina zabytkowa (w skali)" render="true"/>
-      <category symbol="13" value="0010_327_1" label="świątynia chrześcijańska: kościół lub cerkiew (w skali)" render="true"/>
-      <category symbol="14" value="0010_328_1" label="świątynia niechrześcijańska (w skali)" render="true"/>
-      <category symbol="15" value="0010_329_1" label="kaplica (w skali)" render="true"/>
-      <category symbol="16" value="0010_337" label="szklarnia" render="true"/>
-      <category symbol="17" value="0010_423" label="transformator w budynku" render="true"/>
+      <category symbol="0" label="kaplica (symbol)" value="0010_329_2" render="true"/>
+      <category symbol="1" label="latarnia morska" value="0010_630" render="true"/>
+      <category symbol="2" label="świątynia niechrześcijańska (symbol)" value="0010_328_2" render="true"/>
+      <category symbol="3" label="świątynia chrześcijańska: kościół lub cerkiew (symbol)" value="0010_327_2" render="true"/>
+      <category symbol="4" label="budynek mieszkalny wielorodzinny (w skali)" value="0010_317_1" render="true"/>
+      <category symbol="5" label="budynek mieszkalny jednorodzinny (w skali)" value="0010_318_1" render="true"/>
+      <category symbol="6" label="budynek mieszkalny wysoki" value="0010_319" render="true"/>
+      <category symbol="7" label="budynek użyteczności publicznej (w skali)" value="0010_320_1" render="true"/>
+      <category symbol="8" label="budynek użyteczności publicznej wysoki (w skali)" value="0010_321" render="true"/>
+      <category symbol="9" label="budynek przemysłowy (w skali)" value="0010_323_1" render="true"/>
+      <category symbol="10" label="budynek przemysłowy wysoki" value="0010_324" render="true"/>
+      <category symbol="11" label="budynek gospodarczy (w skali)" value="0010_325_1" render="true"/>
+      <category symbol="12" label="budynek zrujnowany lub ruina zabytkowa (w skali)" value="0010_326_1" render="true"/>
+      <category symbol="13" label="świątynia chrześcijańska: kościół lub cerkiew (w skali)" value="0010_327_1" render="true"/>
+      <category symbol="14" label="świątynia niechrześcijańska (w skali)" value="0010_328_1" render="true"/>
+      <category symbol="15" label="kaplica (w skali)" value="0010_329_1" render="true"/>
+      <category symbol="16" label="szklarnia" value="0010_337" render="true"/>
+      <category symbol="17" label="transformator w budynku" value="0010_423" render="true"/>
     </categories>
     <symbols>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="0">
-        <layer class="CentroidFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="0" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="0" class="CentroidFill">
           <prop v="1" k="point_on_all_parts"/>
           <prop v="1" k="point_on_surface"/>
           <data_defined_properties>
@@ -38,8 +38,8 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="marker" name="@0@0">
-            <layer class="SvgMarker" locked="0" enabled="1" pass="0">
+          <symbol type="marker" force_rhr="0" name="@0@0" clip_to_extent="1" alpha="1">
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="0" k="fixedAspectRatio"/>
@@ -68,8 +68,8 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="1">
-        <layer class="CentroidFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="1" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="0" class="CentroidFill">
           <prop v="0" k="point_on_all_parts"/>
           <prop v="1" k="point_on_surface"/>
           <data_defined_properties>
@@ -79,8 +79,8 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="marker" name="@1@0">
-            <layer class="SvgMarker" locked="0" enabled="1" pass="0">
+          <symbol type="marker" force_rhr="0" name="@1@0" clip_to_extent="1" alpha="1">
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <prop v="0" k="angle"/>
               <prop v="255,0,0,255" k="color"/>
               <prop v="0" k="fixedAspectRatio"/>
@@ -109,8 +109,8 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="10">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="10" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="153,146,191,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -131,8 +131,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="11">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="11" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="189,185,182,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -153,8 +153,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="12">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="12" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="26,23,27,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -175,8 +175,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="13">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="13" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="182,64,133,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -197,8 +197,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="14">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="14" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="182,64,133,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -219,8 +219,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="15">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="15" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="182,64,133,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -240,7 +240,7 @@
             </Option>
           </data_defined_properties>
         </layer>
-        <layer class="CentroidFill" locked="0" enabled="1" pass="0">
+        <layer locked="0" enabled="1" pass="1" class="CentroidFill">
           <prop v="1" k="point_on_all_parts"/>
           <prop v="1" k="point_on_surface"/>
           <data_defined_properties>
@@ -250,8 +250,8 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="marker" name="@15@1">
-            <layer class="SvgMarker" locked="0" enabled="1" pass="0">
+          <symbol type="marker" force_rhr="0" name="@15@1" clip_to_extent="1" alpha="1">
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <prop v="0" k="angle"/>
               <prop v="255,255,255,255" k="color"/>
               <prop v="0" k="fixedAspectRatio"/>
@@ -291,8 +291,8 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="16">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="16" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="157,192,164,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -313,8 +313,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="17">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="17" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="189,185,182,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -335,8 +335,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="2">
-        <layer class="CentroidFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="2" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="0" class="CentroidFill">
           <prop v="1" k="point_on_all_parts"/>
           <prop v="1" k="point_on_surface"/>
           <data_defined_properties>
@@ -346,8 +346,8 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="marker" name="@2@0">
-            <layer class="SvgMarker" locked="0" enabled="1" pass="0">
+          <symbol type="marker" force_rhr="0" name="@2@0" clip_to_extent="1" alpha="1">
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="0" k="fixedAspectRatio"/>
@@ -376,8 +376,8 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="3">
-        <layer class="CentroidFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="3" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="0" class="CentroidFill">
           <prop v="1" k="point_on_all_parts"/>
           <prop v="1" k="point_on_surface"/>
           <data_defined_properties>
@@ -387,8 +387,8 @@
               <Option type="QString" value="collection" name="type"/>
             </Option>
           </data_defined_properties>
-          <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="marker" name="@3@0">
-            <layer class="SvgMarker" locked="0" enabled="1" pass="0">
+          <symbol type="marker" force_rhr="0" name="@3@0" clip_to_extent="1" alpha="1">
+            <layer locked="0" enabled="1" pass="0" class="SvgMarker">
               <prop v="0" k="angle"/>
               <prop v="0,0,0,255" k="color"/>
               <prop v="0" k="fixedAspectRatio"/>
@@ -417,8 +417,8 @@
           </symbol>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="4">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="4" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="204,100,21,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -439,8 +439,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="5">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="5" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="204,100,21,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -461,8 +461,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="6">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="6" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="204,100,21,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -483,8 +483,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="7">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="7" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="121,40,39,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -505,8 +505,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="8">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="8" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="121,40,39,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -527,8 +527,8 @@
           </data_defined_properties>
         </layer>
       </symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="9">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="9" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="1" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="153,146,191,255" k="color"/>
           <prop v="miter" k="joinstyle"/>
@@ -551,8 +551,8 @@
       </symbol>
     </symbols>
     <source-symbol>
-      <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="fill" name="0">
-        <layer class="SimpleFill" locked="0" enabled="1" pass="0">
+      <symbol type="fill" force_rhr="0" name="0" clip_to_extent="1" alpha="1">
+        <layer locked="0" enabled="1" pass="0" class="SimpleFill">
           <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
           <prop v="253,191,111,255" k="color"/>
           <prop v="bevel" k="joinstyle"/>
@@ -578,21 +578,21 @@
     <sizescale/>
   </renderer-v2>
   <customproperties>
-    <property value="COALESCE( &quot;SYS_ID&quot;, '&lt;NULL>' )" key="dualview/previewExpressions"/>
-    <property value="0" key="embeddedWidgets/count"/>
+    <property key="dualview/previewExpressions" value="COALESCE( &quot;SYS_ID&quot;, '&lt;NULL>' )"/>
+    <property key="embeddedWidgets/count" value="0"/>
     <property key="variableNames"/>
     <property key="variableValues"/>
   </customproperties>
   <blendMode>0</blendMode>
   <featureBlendMode>0</featureBlendMode>
   <layerOpacity>1</layerOpacity>
-  <SingleCategoryDiagramRenderer diagramType="Pie" attributeLegend="1">
-    <DiagramCategory width="15" lineSizeType="MM" opacity="1" backgroundColor="#ffffff" rotationOffset="270" sizeScale="3x:0,0,0,0,0,0" scaleDependency="Area" maxScaleDenominator="1e+08" scaleBasedVisibility="0" backgroundAlpha="255" height="15" minScaleDenominator="0" minimumSize="0" penAlpha="255" sizeType="MM" direction="1" labelPlacementMethod="XHeight" barWidth="5" spacing="0" spacingUnitScale="3x:0,0,0,0,0,0" showAxis="0" penColor="#000000" diagramOrientation="Up" lineSizeScale="3x:0,0,0,0,0,0" enabled="0" penWidth="0" spacingUnit="MM">
+  <SingleCategoryDiagramRenderer attributeLegend="1" diagramType="Pie">
+    <DiagramCategory penAlpha="255" spacingUnit="MM" backgroundColor="#ffffff" showAxis="0" enabled="0" minimumSize="0" height="15" spacing="0" sizeScale="3x:0,0,0,0,0,0" labelPlacementMethod="XHeight" scaleBasedVisibility="0" width="15" opacity="1" spacingUnitScale="3x:0,0,0,0,0,0" scaleDependency="Area" barWidth="5" direction="1" diagramOrientation="Up" rotationOffset="270" lineSizeType="MM" lineSizeScale="3x:0,0,0,0,0,0" penColor="#000000" maxScaleDenominator="1e+08" penWidth="0" backgroundAlpha="255" minScaleDenominator="0" sizeType="MM">
       <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
-      <attribute field="" label="" color="#000000"/>
+      <attribute field="" color="#000000" label=""/>
       <axisSymbol>
-        <symbol clip_to_extent="1" alpha="1" force_rhr="0" type="line" name="">
-          <layer class="SimpleLine" locked="0" enabled="1" pass="0">
+        <symbol type="line" force_rhr="0" name="" clip_to_extent="1" alpha="1">
+          <layer locked="0" enabled="1" pass="0" class="SimpleLine">
             <prop v="square" k="capstyle"/>
             <prop v="5;2" k="customdash"/>
             <prop v="3x:0,0,0,0,0,0" k="customdash_map_unit_scale"/>
@@ -621,7 +621,7 @@
       </axisSymbol>
     </DiagramCategory>
   </SingleCategoryDiagramRenderer>
-  <DiagramLayerSettings linePlacementFlags="2" zIndex="0" priority="0" placement="0" obstacle="0" dist="0" showAll="1">
+  <DiagramLayerSettings dist="0" obstacle="0" placement="0" showAll="1" zIndex="0" priority="0" linePlacementFlags="2">
     <properties>
       <Option type="Map">
         <Option type="QString" value="" name="name"/>
@@ -693,20 +693,6 @@
       </editWidget>
     </field>
     <field name="x_katDoklGeom">
-      <editWidget type="TextEdit">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="x_doklGeom">
-      <editWidget type="Range">
-        <config>
-          <Option/>
-        </config>
-      </editWidget>
-    </field>
-    <field name="x_doklGeom_uom">
       <editWidget type="TextEdit">
         <config>
           <Option/>
@@ -881,6 +867,27 @@
         </config>
       </editWidget>
     </field>
+    <field name="x_uwagi">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="x_doklGeom">
+      <editWidget type="Range">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
+    <field name="x_doklGeom_uom">
+      <editWidget type="TextEdit">
+        <config>
+          <Option/>
+        </config>
+      </editWidget>
+    </field>
     <field name="KOD10K">
       <editWidget type="TextEdit">
         <config>
@@ -890,117 +897,120 @@
     </field>
   </fieldConfiguration>
   <aliases>
-    <alias field="gml_id" index="0" name=""/>
-    <alias field="lokalnyId" index="1" name=""/>
-    <alias field="przestrzenNazw" index="2" name=""/>
-    <alias field="wersjaId" index="3" name=""/>
-    <alias field="czyObiektBDOO" index="4" name=""/>
-    <alias field="x_kod" index="5" name=""/>
-    <alias field="x_skrKarto" index="6" name=""/>
-    <alias field="x_katDoklGeom" index="7" name=""/>
-    <alias field="x_doklGeom" index="8" name=""/>
-    <alias field="x_doklGeom_uom" index="9" name=""/>
-    <alias field="x_zrodloDanychG" index="10" name=""/>
-    <alias field="x_zrodloDanychA" index="11" name=""/>
-    <alias field="x_katIstnienia" index="12" name=""/>
-    <alias field="x_rodzajReprGeom" index="13" name=""/>
-    <alias field="x_aktualnoscG" index="14" name=""/>
-    <alias field="x_aktualnoscA" index="15" name=""/>
-    <alias field="poczatekWersjiObiektu" index="16" name=""/>
-    <alias field="x_dataUtworzenia" index="17" name=""/>
-    <alias field="x_kodKarto10k" index="18" name=""/>
-    <alias field="x_kodKarto25k" index="19" name=""/>
-    <alias field="x_kodKarto50k" index="20" name=""/>
-    <alias field="x_kodKarto100k" index="21" name=""/>
-    <alias field="x_kodKarto250k" index="22" name=""/>
-    <alias field="x_kodKarto500k" index="23" name=""/>
-    <alias field="x_kodKarto1000k" index="24" name=""/>
-    <alias field="funOgolnaBudynku" index="25" name=""/>
-    <alias field="funSzczegolowaBudynku" index="26" name=""/>
-    <alias field="liczbaKondygnacji" index="27" name=""/>
-    <alias field="kodKst" index="28" name=""/>
-    <alias field="zabytek" index="29" name=""/>
-    <alias field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" index="30" name=""/>
-    <alias field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" index="31" name=""/>
-    <alias field="x_informDodatkowa" index="32" name=""/>
-    <alias field="nazwa" index="33" name=""/>
-    <alias field="KOD10K" index="34" name=""/>
+    <alias index="0" field="gml_id" name=""/>
+    <alias index="1" field="lokalnyId" name=""/>
+    <alias index="2" field="przestrzenNazw" name=""/>
+    <alias index="3" field="wersjaId" name=""/>
+    <alias index="4" field="czyObiektBDOO" name=""/>
+    <alias index="5" field="x_kod" name=""/>
+    <alias index="6" field="x_skrKarto" name=""/>
+    <alias index="7" field="x_katDoklGeom" name=""/>
+    <alias index="8" field="x_zrodloDanychG" name=""/>
+    <alias index="9" field="x_zrodloDanychA" name=""/>
+    <alias index="10" field="x_katIstnienia" name=""/>
+    <alias index="11" field="x_rodzajReprGeom" name=""/>
+    <alias index="12" field="x_aktualnoscG" name=""/>
+    <alias index="13" field="x_aktualnoscA" name=""/>
+    <alias index="14" field="poczatekWersjiObiektu" name=""/>
+    <alias index="15" field="x_dataUtworzenia" name=""/>
+    <alias index="16" field="x_kodKarto10k" name=""/>
+    <alias index="17" field="x_kodKarto25k" name=""/>
+    <alias index="18" field="x_kodKarto50k" name=""/>
+    <alias index="19" field="x_kodKarto100k" name=""/>
+    <alias index="20" field="x_kodKarto250k" name=""/>
+    <alias index="21" field="x_kodKarto500k" name=""/>
+    <alias index="22" field="x_kodKarto1000k" name=""/>
+    <alias index="23" field="funOgolnaBudynku" name=""/>
+    <alias index="24" field="funSzczegolowaBudynku" name=""/>
+    <alias index="25" field="liczbaKondygnacji" name=""/>
+    <alias index="26" field="kodKst" name=""/>
+    <alias index="27" field="zabytek" name=""/>
+    <alias index="28" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" name=""/>
+    <alias index="29" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" name=""/>
+    <alias index="30" field="x_informDodatkowa" name=""/>
+    <alias index="31" field="nazwa" name=""/>
+    <alias index="32" field="x_uwagi" name=""/>
+    <alias index="33" field="x_doklGeom" name=""/>
+    <alias index="34" field="x_doklGeom_uom" name=""/>
+    <alias index="35" field="KOD10K" name=""/>
   </aliases>
   <excludeAttributesWMS/>
   <excludeAttributesWFS/>
   <defaults>
-    <default expression="" field="gml_id" applyOnUpdate="0"/>
-    <default expression="" field="lokalnyId" applyOnUpdate="0"/>
-    <default expression="" field="przestrzenNazw" applyOnUpdate="0"/>
-    <default expression="" field="wersjaId" applyOnUpdate="0"/>
-    <default expression="" field="czyObiektBDOO" applyOnUpdate="0"/>
-    <default expression="" field="x_kod" applyOnUpdate="0"/>
-    <default expression="" field="x_skrKarto" applyOnUpdate="0"/>
-    <default expression="" field="x_katDoklGeom" applyOnUpdate="0"/>
-    <default expression="" field="x_doklGeom" applyOnUpdate="0"/>
-    <default expression="" field="x_doklGeom_uom" applyOnUpdate="0"/>
-    <default expression="" field="x_zrodloDanychG" applyOnUpdate="0"/>
-    <default expression="" field="x_zrodloDanychA" applyOnUpdate="0"/>
-    <default expression="" field="x_katIstnienia" applyOnUpdate="0"/>
-    <default expression="" field="x_rodzajReprGeom" applyOnUpdate="0"/>
-    <default expression="" field="x_aktualnoscG" applyOnUpdate="0"/>
-    <default expression="" field="x_aktualnoscA" applyOnUpdate="0"/>
-    <default expression="" field="poczatekWersjiObiektu" applyOnUpdate="0"/>
-    <default expression="" field="x_dataUtworzenia" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto10k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto25k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto50k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto100k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto250k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto500k" applyOnUpdate="0"/>
-    <default expression="" field="x_kodKarto1000k" applyOnUpdate="0"/>
-    <default expression="" field="funOgolnaBudynku" applyOnUpdate="0"/>
-    <default expression="" field="funSzczegolowaBudynku" applyOnUpdate="0"/>
-    <default expression="" field="liczbaKondygnacji" applyOnUpdate="0"/>
-    <default expression="" field="kodKst" applyOnUpdate="0"/>
-    <default expression="" field="zabytek" applyOnUpdate="0"/>
-    <default expression="" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" applyOnUpdate="0"/>
-    <default expression="" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" applyOnUpdate="0"/>
-    <default expression="" field="x_informDodatkowa" applyOnUpdate="0"/>
-    <default expression="" field="nazwa" applyOnUpdate="0"/>
-    <default expression="" field="KOD10K" applyOnUpdate="0"/>
+    <default field="gml_id" applyOnUpdate="0" expression=""/>
+    <default field="lokalnyId" applyOnUpdate="0" expression=""/>
+    <default field="przestrzenNazw" applyOnUpdate="0" expression=""/>
+    <default field="wersjaId" applyOnUpdate="0" expression=""/>
+    <default field="czyObiektBDOO" applyOnUpdate="0" expression=""/>
+    <default field="x_kod" applyOnUpdate="0" expression=""/>
+    <default field="x_skrKarto" applyOnUpdate="0" expression=""/>
+    <default field="x_katDoklGeom" applyOnUpdate="0" expression=""/>
+    <default field="x_zrodloDanychG" applyOnUpdate="0" expression=""/>
+    <default field="x_zrodloDanychA" applyOnUpdate="0" expression=""/>
+    <default field="x_katIstnienia" applyOnUpdate="0" expression=""/>
+    <default field="x_rodzajReprGeom" applyOnUpdate="0" expression=""/>
+    <default field="x_aktualnoscG" applyOnUpdate="0" expression=""/>
+    <default field="x_aktualnoscA" applyOnUpdate="0" expression=""/>
+    <default field="poczatekWersjiObiektu" applyOnUpdate="0" expression=""/>
+    <default field="x_dataUtworzenia" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto10k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto25k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto50k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto100k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto250k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto500k" applyOnUpdate="0" expression=""/>
+    <default field="x_kodKarto1000k" applyOnUpdate="0" expression=""/>
+    <default field="funOgolnaBudynku" applyOnUpdate="0" expression=""/>
+    <default field="funSzczegolowaBudynku" applyOnUpdate="0" expression=""/>
+    <default field="liczbaKondygnacji" applyOnUpdate="0" expression=""/>
+    <default field="kodKst" applyOnUpdate="0" expression=""/>
+    <default field="zabytek" applyOnUpdate="0" expression=""/>
+    <default field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" applyOnUpdate="0" expression=""/>
+    <default field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" applyOnUpdate="0" expression=""/>
+    <default field="x_informDodatkowa" applyOnUpdate="0" expression=""/>
+    <default field="nazwa" applyOnUpdate="0" expression=""/>
+    <default field="x_uwagi" applyOnUpdate="0" expression=""/>
+    <default field="x_doklGeom" applyOnUpdate="0" expression=""/>
+    <default field="x_doklGeom_uom" applyOnUpdate="0" expression=""/>
+    <default field="KOD10K" applyOnUpdate="0" expression=""/>
   </defaults>
   <constraints>
-    <constraint constraints="1" unique_strength="0" field="gml_id" notnull_strength="1" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="lokalnyId" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="przestrzenNazw" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="wersjaId" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="czyObiektBDOO" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kod" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_skrKarto" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_katDoklGeom" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_doklGeom" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_doklGeom_uom" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_zrodloDanychG" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_zrodloDanychA" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_katIstnienia" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_rodzajReprGeom" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_aktualnoscG" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_aktualnoscA" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="poczatekWersjiObiektu" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_dataUtworzenia" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto10k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto25k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto50k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto100k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto250k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto500k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_kodKarto1000k" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="funOgolnaBudynku" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="funSzczegolowaBudynku" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="liczbaKondygnacji" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="kodKst" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="zabytek" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="x_informDodatkowa" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="nazwa" notnull_strength="0" exp_strength="0"/>
-    <constraint constraints="0" unique_strength="0" field="KOD10K" notnull_strength="0" exp_strength="0"/>
+    <constraint unique_strength="0" field="gml_id" exp_strength="0" notnull_strength="1" constraints="1"/>
+    <constraint unique_strength="0" field="lokalnyId" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="przestrzenNazw" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="wersjaId" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="czyObiektBDOO" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kod" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_skrKarto" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_katDoklGeom" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_zrodloDanychG" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_zrodloDanychA" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_katIstnienia" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_rodzajReprGeom" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_aktualnoscG" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_aktualnoscA" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="poczatekWersjiObiektu" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_dataUtworzenia" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto10k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto25k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto50k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto100k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto250k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto500k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_kodKarto1000k" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="funOgolnaBudynku" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="funSzczegolowaBudynku" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="liczbaKondygnacji" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="kodKst" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="zabytek" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_informDodatkowa" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="nazwa" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_uwagi" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_doklGeom" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="x_doklGeom_uom" exp_strength="0" notnull_strength="0" constraints="0"/>
+    <constraint unique_strength="0" field="KOD10K" exp_strength="0" notnull_strength="0" constraints="0"/>
   </constraints>
   <constraintExpressions>
     <constraint exp="" field="gml_id" desc=""/>
@@ -1011,8 +1021,6 @@
     <constraint exp="" field="x_kod" desc=""/>
     <constraint exp="" field="x_skrKarto" desc=""/>
     <constraint exp="" field="x_katDoklGeom" desc=""/>
-    <constraint exp="" field="x_doklGeom" desc=""/>
-    <constraint exp="" field="x_doklGeom_uom" desc=""/>
     <constraint exp="" field="x_zrodloDanychG" desc=""/>
     <constraint exp="" field="x_zrodloDanychA" desc=""/>
     <constraint exp="" field="x_katIstnienia" desc=""/>
@@ -1037,52 +1045,56 @@
     <constraint exp="" field="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" desc=""/>
     <constraint exp="" field="x_informDodatkowa" desc=""/>
     <constraint exp="" field="nazwa" desc=""/>
+    <constraint exp="" field="x_uwagi" desc=""/>
+    <constraint exp="" field="x_doklGeom" desc=""/>
+    <constraint exp="" field="x_doklGeom_uom" desc=""/>
     <constraint exp="" field="KOD10K" desc=""/>
   </constraintExpressions>
   <expressionfields>
-    <field typeName="string" precision="0" expression=" &quot;x_kodKarto10k&quot; " subType="0" length="0" type="10" name="KOD10K" comment=""/>
+    <field comment="" precision="0" type="10" length="0" subType="0" name="KOD10K" expression=" &quot;x_kodKarto10k&quot; " typeName="string"/>
   </expressionfields>
   <attributeactions>
-    <defaultAction value="{00000000-0000-0000-0000-000000000000}" key="Canvas"/>
+    <defaultAction key="Canvas" value="{00000000-0000-0000-0000-000000000000}"/>
   </attributeactions>
   <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;KOD10K&quot;" sortOrder="0">
     <columns>
-      <column hidden="0" width="-1" type="field" name="funOgolnaBudynku"/>
-      <column hidden="1" width="-1" type="actions"/>
-      <column hidden="0" width="-1" type="field" name="gml_id"/>
-      <column hidden="0" width="-1" type="field" name="lokalnyId"/>
-      <column hidden="0" width="-1" type="field" name="przestrzenNazw"/>
-      <column hidden="0" width="-1" type="field" name="wersjaId"/>
-      <column hidden="0" width="-1" type="field" name="czyObiektBDOO"/>
-      <column hidden="0" width="-1" type="field" name="x_kod"/>
-      <column hidden="0" width="-1" type="field" name="x_skrKarto"/>
-      <column hidden="0" width="-1" type="field" name="x_katDoklGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_zrodloDanychG"/>
-      <column hidden="0" width="-1" type="field" name="x_zrodloDanychA"/>
-      <column hidden="0" width="-1" type="field" name="x_katIstnienia"/>
-      <column hidden="0" width="-1" type="field" name="x_rodzajReprGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_aktualnoscG"/>
-      <column hidden="0" width="-1" type="field" name="x_aktualnoscA"/>
-      <column hidden="0" width="-1" type="field" name="poczatekWersjiObiektu"/>
-      <column hidden="0" width="-1" type="field" name="x_dataUtworzenia"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto10k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto25k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto50k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto100k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto250k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto500k"/>
-      <column hidden="0" width="-1" type="field" name="x_kodKarto1000k"/>
-      <column hidden="0" width="-1" type="field" name="funSzczegolowaBudynku"/>
-      <column hidden="0" width="-1" type="field" name="liczbaKondygnacji"/>
-      <column hidden="0" width="-1" type="field" name="kodKst"/>
-      <column hidden="0" width="-1" type="field" name="zabytek"/>
-      <column hidden="0" width="-1" type="field" name="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId"/>
-      <column hidden="0" width="-1" type="field" name="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw"/>
-      <column hidden="0" width="-1" type="field" name="x_informDodatkowa"/>
-      <column hidden="0" width="-1" type="field" name="nazwa"/>
-      <column hidden="1" width="-1" type="field" name="KOD10K"/>
-      <column hidden="0" width="-1" type="field" name="x_doklGeom"/>
-      <column hidden="0" width="-1" type="field" name="x_doklGeom_uom"/>
+      <column type="field" width="-1" name="funOgolnaBudynku" hidden="0"/>
+      <column type="actions" width="-1" hidden="1"/>
+      <column type="field" width="-1" name="gml_id" hidden="0"/>
+      <column type="field" width="-1" name="lokalnyId" hidden="0"/>
+      <column type="field" width="-1" name="przestrzenNazw" hidden="0"/>
+      <column type="field" width="-1" name="wersjaId" hidden="0"/>
+      <column type="field" width="-1" name="czyObiektBDOO" hidden="0"/>
+      <column type="field" width="-1" name="x_kod" hidden="0"/>
+      <column type="field" width="-1" name="x_skrKarto" hidden="0"/>
+      <column type="field" width="-1" name="x_katDoklGeom" hidden="0"/>
+      <column type="field" width="-1" name="x_zrodloDanychG" hidden="0"/>
+      <column type="field" width="-1" name="x_zrodloDanychA" hidden="0"/>
+      <column type="field" width="-1" name="x_katIstnienia" hidden="0"/>
+      <column type="field" width="-1" name="x_rodzajReprGeom" hidden="0"/>
+      <column type="field" width="-1" name="x_aktualnoscG" hidden="0"/>
+      <column type="field" width="-1" name="x_aktualnoscA" hidden="0"/>
+      <column type="field" width="-1" name="poczatekWersjiObiektu" hidden="0"/>
+      <column type="field" width="-1" name="x_dataUtworzenia" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto10k" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto25k" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto50k" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto100k" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto250k" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto500k" hidden="0"/>
+      <column type="field" width="-1" name="x_kodKarto1000k" hidden="0"/>
+      <column type="field" width="-1" name="funSzczegolowaBudynku" hidden="0"/>
+      <column type="field" width="-1" name="liczbaKondygnacji" hidden="0"/>
+      <column type="field" width="-1" name="kodKst" hidden="0"/>
+      <column type="field" width="-1" name="zabytek" hidden="0"/>
+      <column type="field" width="-1" name="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|lokalnyId" hidden="0"/>
+      <column type="field" width="-1" name="EGiB|BT_ReferencjaDoObiektu|idIIP|BT_Identyfikator|przestrzenNazw" hidden="0"/>
+      <column type="field" width="-1" name="x_informDodatkowa" hidden="0"/>
+      <column type="field" width="-1" name="nazwa" hidden="0"/>
+      <column type="field" width="-1" name="KOD10K" hidden="1"/>
+      <column type="field" width="-1" name="x_doklGeom" hidden="0"/>
+      <column type="field" width="-1" name="x_doklGeom_uom" hidden="0"/>
+      <column type="field" width="-1" name="x_uwagi" hidden="0"/>
     </columns>
   </attributetableconfig>
   <conditionalstyles>
