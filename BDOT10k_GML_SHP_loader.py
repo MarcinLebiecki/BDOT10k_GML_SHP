@@ -29,7 +29,7 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction,QFileDialog,QProgressBar,QMessageBox
 
 # Initialize Qt resources from file resources.py
-from .resources import *
+#from .resources import *
 from shutil import copyfile
 import os.path
 import re
@@ -198,7 +198,7 @@ class BDOT10k_GML_SHP_loader:
         "0203" : "GŁOGOWSKI",
         "0204" : "GÓROWSKI",
         "0205" : "JAWORSKI",
-        "0206" : "JELENIOGÓRSKI",
+        "0206" : "KARKONOSKI",
         "0207" : "KAMIENNOGÓRSKI",
         "0208" : "KŁODZKI",
         "0209" : "LEGNICKI",
