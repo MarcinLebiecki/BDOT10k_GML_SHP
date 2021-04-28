@@ -6,7 +6,7 @@
 name=BDOT10k_GML_SHP
 qgisMinimumVersion=3.0
 description=This tool can be used to import BDOT10k shapefiles or GML files and adds them in the QGIS canvas. Also, layes can be symbolized to be similar to the topographic map in 1:10 000 scale.
-version=1.0.6
+version=1.0.7
 author=Marcin Lebiecki - Główny Urząd Geodezji i Kartografii
 email=marcin.lebiecki@gugik.gov.pl
 

@@ -29,7 +29,7 @@ from qgis.PyQt.QtGui import QIcon
 from qgis.PyQt.QtWidgets import QAction,QFileDialog,QProgressBar,QMessageBox
 
 # Initialize Qt resources from file resources.py
-#from .resources import *
+from . import resources
 from shutil import copyfile
 import os.path
 import re
