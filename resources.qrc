@@ -1,5 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins/BDOT10k_GML_SHP_loader" >
-        <file>icon.png</file>
-    </qresource>
-</RCC>
