@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="-15 -15 30 23.1818180185427" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gmsvgsym="http://www.intergraph.com/GeoMedia/svgsym">
-  <!-- Creator: SVG Document for Symbols-->
-  <path id="LineString2d_1373" style=" stroke-width: 0.0000010000;stroke: #ffffff; fill: none; " d="M 0 8.1818175943107 L -14.9999988907617 -6.81818129645103 L -6.81818129645103 -14.9999988907617 L 0 -8.1818175943107 L 6.81818129645103 -14.9999988907617 L 14.9999988907617 -6.81818129645103 L 0 8.1818175943107 " xmlns="http://www.w3.org/2000/svg" />
-  <g id="ComplexString2d_1374" style=" fill-rule: evenodd; stroke-width: 0.0000000000;stroke: #ffffff; fill: #ffffff; " xmlns="http://www.w3.org/2000/svg">
-    <path d="M 0 8.1818175943107 L -14.9999988907617 -6.81818129645103 L -6.81818129645103 -14.9999988907617 L 0 -8.1818175943107 L 6.81818129645103 -14.9999988907617 L 14.9999988907617 -6.81818129645103 L 0 8.1818175943107 " />
-  </g>
-</svg>
